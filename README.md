@@ -3,8 +3,6 @@ Selamat Datang di Repository Garuda Framework PHP Professional Edition
 
 ## We Are Not ARTISAN , but We Are Professional Edition 
 
-Silahkan gunakan framework PHP ini dengan Bijak.
-
 * Name                : Garuda Framework Professional Edition
 * Version           	: Undefined_1 
 * Realease Date    	: 29 April 2017
@@ -16,7 +14,23 @@ Silahkan gunakan framework PHP ini dengan Bijak.
 * Akun LinkIn 		: <a href="#"></a>
 * Akun Paypal         : <a href="https://www.paypal.me/lamhotsimamora" target="_blank">paypal.me/lamhotsimamora</a>
 * Akun BNI 022-448-93-37 a/n Lamhot Simamora
-### License = Cukup berikan ini pada footer website anda 
+
+# Documentation [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://garudaframeworkpro.lamhotsimamora.com/dokumentasi/) 
+
+### Code
+### 
+```go  
+GF::Route("Home",function(){
+	echo "Hello World !";
+});
+GF::Route("Professional /{ a }/{ b }",function($get){
+	$a = $get['a'] ?? false;
+	$b = $get['b'] ?? false;
+	echo "Hello World !";
+});
+```
+
+### License , Cukup berikan tulisan berikut ini pada footer website anda 
 ```go 
 powered by Garuda Framework Pro Edition 
 ```
@@ -37,7 +51,7 @@ dibagian footer website.
 ### Apabila anda ingin mengirimkan ucapan terima kasih berupa Rupiah / Dollar , informasi Akun BANK tertera diatas. Terima Kasih
 ### Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLK :).
 
-
-#Salam ECHO !
+# Silahkan gunakan Garuda framework PHP ini dengan Bijak...
+## Salam ECHO !
 
 
