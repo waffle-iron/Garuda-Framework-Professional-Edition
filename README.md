@@ -17,7 +17,7 @@ Selamat Datang di Repository Garuda Framework PHP Professional Edition
 
 ### Documentation [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://garudaframeworkpro.lamhotsimamora.com/dokumentasi/) 
 
-### Code
+### Pre-View Syntax
 ### 
 ```go  
 GF::Route("Home",function(){
@@ -29,6 +29,17 @@ GF::Route("Professional /{ a }/{ b }",function($get){
 	echo "Hello World !";
 });
 ```
+
+### Flow System
+* Router 
+* Controller
+* Model
+* View
+
+### Direktori 
+* Library
+* Storage
+* Helper
 
 ### License 
 Apabila anda ingin menggunakan framework ini untuk kebutuhan  Distribusi ataupun Komersial, Cukup berikan tulisan berikut ini di Footer website anda. Dan beritahu kepada saya melalui email, agar website anda saya cantumkan di Repository ini.
