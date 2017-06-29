@@ -16,7 +16,10 @@ Silahkan gunakan framework PHP ini dengan Bijak.
 * Akun LinkIn 		: <a href="#"></a>
 * Akun Paypal         : <a href="https://www.paypal.me/lamhotsimamora" target="_blank">paypal.me/lamhotsimamora</a>
 * Akun BNI 022-448-93-37 a/n Lamhot Simamora
-# License = Cukup berikan ini pada footer website anda "powered by Garuda Framework Pro Edition"
+### License = Cukup berikan ini pada footer website anda 
+```go 
+powered by Garuda Framework Pro Edition 
+```
 
 # Kunjungi Halaman <a href="https://garudaframeworkpro.lamhotsimamora.com" target="_blank">Visit Demo GF-Pro</a>
 
@@ -30,5 +33,9 @@ dibagian footer website.
 ## Dan beritau saya melalui email, agar website anda saya cantumkan di Repository ini.
 
 ### Apabila anda ingin mengirimkan ucapan terima kasih berupa Rupiah / Dollar , informasi Akun BANK tertera diatas. Terima Kasih
+## Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLK :).
+
+
+#Salam ECHO !
 
 
