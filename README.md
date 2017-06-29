@@ -15,7 +15,7 @@ Selamat Datang di Repository Garuda Framework PHP Professional Edition
 * Akun Paypal         : <a href="https://www.paypal.me/lamhotsimamora" target="_blank">paypal.me/lamhotsimamora</a>
 * Akun BNI 022-448-93-37 a/n Lamhot Simamora
 
-# Documentation [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://garudaframeworkpro.lamhotsimamora.com/dokumentasi/) 
+### Documentation [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://garudaframeworkpro.lamhotsimamora.com/dokumentasi/) 
 
 ### Code
 ### 
@@ -30,28 +30,27 @@ GF::Route("Professional /{ a }/{ b }",function($get){
 });
 ```
 
-### License , Cukup berikan tulisan berikut ini pada footer website anda 
+### License 
+Apabila anda ingin menggunakan framework ini untuk kebutuhan  Distribusi ataupun Komersial, Cukup berikan tulisan berikut ini di Footer website anda. Dan beritahu kepada saya melalui email, agar website anda saya cantumkan di Repository ini.
 ```go 
 powered by Garuda Framework Pro Edition 
 ```
-## Sponsor
+atau
+```go 
+Framework by GF Pro Edition  
+```
+
+### Sponsor
 Jika anda berniat memberikan hosting atau domain, beritau saya melalui email diatas.
 
 ### Kunjungi Halaman GF-Pro <a href="https://garudaframeworkpro.lamhotsimamora.com" target="_blank">click</a>
 
-### Apabila anda ingin menggunakan framework ini untuk kebutuhan  Distribusi ataupun Komersial
-harap sertakan 
-```go 
-powered by Garuda Framework Pro Edition 
-```
-dibagian footer website.
 
-### Dan beritau saya melalui email, agar website anda saya cantumkan di Repository ini.
 
 ### Apabila anda ingin mengirimkan ucapan terima kasih berupa Rupiah / Dollar , informasi Akun BANK tertera diatas. Terima Kasih
 ### Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLK :).
 
-# Silahkan gunakan Garuda framework PHP ini dengan Bijak...
-## Salam ECHO !
+### Silahkan gunakan Garuda framework PHP ini dengan Bijak...
+### Salam ECHO !
 
 
