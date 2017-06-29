@@ -1,0 +1,1 @@
+<?php exit("404 Page Not found");
