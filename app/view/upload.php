@@ -24,6 +24,7 @@ include 'head.php';
 			<div class="panel-body">  
 				<form action="<?= __full_url__ ?>upload" method="post" enctype="multipart/form-data">
 					<input type="file" class="form-control" id="file_user" name="file_user">
+					<img src="" alt="" id="preview_image" width="200" height="200">
 					</br>
 					<input type="submit" class="btn-default" value="Upload" name="submit">
 				</form>		
@@ -92,8 +93,9 @@ include 'head.php';
 			 		}
 			 });
 		}
-
-
+	 // method untuk menampilkan gambar sebelum diupload 
+	
+	  _previewImage("file_user","preview_image");
 		
 	</script>	
 
