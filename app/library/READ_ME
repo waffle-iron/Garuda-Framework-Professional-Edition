@@ -1,0 +1,8 @@
+Folder Library untuk memasukkan library-library PHP yang telah dibuat oleh programmer lain...
+
+
+Cara untuk memasukkan library -> 
+
+1. Buat folder nama library tersebut 
+2. Daftarkan file yang akan di include di 'app/config.php'
+3. Done

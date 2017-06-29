@@ -1,0 +1,4 @@
+Buka File Dokumentasi "Index.html" dengan mode mobile responsive atau 
+paling tidak jangan full screen, agar dokumentasi dapat terlihat dengan baik.
+
+"Ctrl-Shift-i" (Chrome) 
