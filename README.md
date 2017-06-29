@@ -16,7 +16,7 @@ Silahkan gunakan framework PHP ini dengan Bijak.
 * Akun LinkIn 		: <a href="#"></a>
 * Akun Paypal         : <a href="https://www.paypal.me/lamhotsimamora" target="_blank">paypal.me/lamhotsimamora</a>
 * Akun BNI 022-448-93-37 a/n Lamhot Simamora
-# License [![GoDoc](https://img.shields.io/github/license/mashape/apistatus.svg)](https://raw.githubusercontent.com/lamhotsimamora/Garuda-Framework-Professional-Edition/master/LICENSE.md/LICENSE.md) 
+# License = Cukup berikan ini pada footer website anda "powered by Garuda Framework Pro Edition"
 
 # Kunjungi Halaman <a href="https://garudaframeworkpro.lamhotsimamora.com" target="_blank">Visit Demo GF-Pro</a>
 
