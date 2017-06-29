@@ -196,7 +196,7 @@ GF::Route("load-data",function(){
 	    {
 			$result = $user->getAll();
 				
-			$data_table=' <table class="table table-bordered">
+			$data_table='<div class="table-responsive"><table class="table table-bordered">
 					    <thead>
 					      <tr>
 					        <th>No</th>
@@ -223,7 +223,7 @@ GF::Route("load-data",function(){
 				      ';
 			      	$i++;
 			}
-			$data_table .= '</tbody></table>';
+			$data_table .= '</tbody></table></div>';
 			echo $data_table;
 	    }
 	    else
