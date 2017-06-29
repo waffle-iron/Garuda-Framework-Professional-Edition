@@ -23,19 +23,19 @@ powered by Garuda Framework Pro Edition
 ## Sponsor
 Jika anda berniat memberikan hosting atau domain, beritau saya melalui email diatas.
 
-# Kunjungi Halaman GF-Pro <a href="https://garudaframeworkpro.lamhotsimamora.com" target="_blank">click</a>
+### Kunjungi Halaman GF-Pro <a href="https://garudaframeworkpro.lamhotsimamora.com" target="_blank">click</a>
 
-## Apabila anda ingin menggunakan framework ini untuk kebutuhan  Distribusi ataupun Komersial
+### Apabila anda ingin menggunakan framework ini untuk kebutuhan  Distribusi ataupun Komersial
 harap sertakan 
 ```go 
 powered by Garuda Framework Pro Edition 
 ```
 dibagian footer website.
 
-## Dan beritau saya melalui email, agar website anda saya cantumkan di Repository ini.
+### Dan beritau saya melalui email, agar website anda saya cantumkan di Repository ini.
 
 ### Apabila anda ingin mengirimkan ucapan terima kasih berupa Rupiah / Dollar , informasi Akun BANK tertera diatas. Terima Kasih
-## Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLK :).
+### Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLK :).
 
 
 #Salam ECHO !
