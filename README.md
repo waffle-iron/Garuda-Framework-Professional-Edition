@@ -48,9 +48,9 @@ Jika anda berniat memberikan hosting atau domain, beritau saya melalui email dia
 
 
 ### Apabila anda ingin mengirimkan ucapan terima kasih berupa Rupiah / Dollar , informasi Akun BANK tertera diatas. Terima Kasih
-### Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLK :).
+### Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLAK :).
 
 ### Silahkan gunakan Garuda framework PHP ini dengan Bijak...
-### Salam ECHO !
+### Salam ECHO dan Var Dump !
 
 
