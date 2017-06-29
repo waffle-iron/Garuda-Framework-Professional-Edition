@@ -5,7 +5,7 @@ Selamat Datang di Repository Garuda Framework PHP Professional Edition
 
 * Name                : Garuda Framework Professional Edition
 * Version           	: Undefined_1 
-* Realease Date    	: 29 April 2017
+* Realease Date    	: 29 Juni 2017
 # Author [![GoDoc](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://www.lamhotsimamora.com/) 
 * Email            	: lamhotsimamora36@gmail.com 
 * Web              	: <a href="https://lamhotsimamora.com" target="_blank">www.lamhotsimamora.com</a>
