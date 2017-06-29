@@ -20,8 +20,10 @@ Silahkan gunakan framework PHP ini dengan Bijak.
 ```go 
 powered by Garuda Framework Pro Edition 
 ```
+## Sponsor
+Jika anda berniat memberikan hosting atau domain, beritau saya melalui email diatas.
 
-# Kunjungi Halaman <a href="https://garudaframeworkpro.lamhotsimamora.com" target="_blank">Visit Demo GF-Pro</a>
+# Kunjungi Halaman GF-Pro <a href="https://garudaframeworkpro.lamhotsimamora.com" target="_blank">click</a>
 
 ## Apabila anda ingin menggunakan framework ini untuk kebutuhan  Distribusi ataupun Komersial
 harap sertakan 
