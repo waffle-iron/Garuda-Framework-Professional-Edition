@@ -77,7 +77,7 @@ Didalam framework GF Pro ini, sudah disertakan beberapa library untuk PHP, CSS, 
 ## Tools
 * CKEditor http://ckeditor.com/
 
-Pelajari library diatas melalui dokumentasi yang disertakan, Di framework GF Pro hanya beberapa saja yang saya buatkan contohnya.
+Pelajari library diatas melalui dokumentasi yang disertakan (Apabila dibutuhkan), Di framework GF Pro hanya beberapa saja yang saya buatkan contohnya. Jika tidak dibutuhkan anda bisa hapus librarynya. 
 
 ### Sponsor
 Jika anda berniat memberikan hosting atau domain, beritau saya melalui email diatas.
@@ -87,6 +87,8 @@ Apabila anda ingin mengirimkan ucapan terima kasih berupa Rupiah / Dollar , info
 Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLAK :).
 
 ### Silahkan gunakan Garuda framework PHP ini dengan Bijak...
-### Salam ECHO dan Var Dump !
 
-
+```go 
+Jangan Mempersulit Hal Yang Seharusnya Tidak Sulit
+Salam ECHO dan Var Dump !
+```
