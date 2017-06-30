@@ -5,9 +5,13 @@
  * @package  GF-Pro
  * @author   Lamhot Simamora < lamhotsimamora36@gmail.com >
  */
-( session_status() == PHP_SESSION_NONE) ? session_start() : false;
+defined('sys_run_app') OR exit('403 You dont have permission to access / on this server...');
 
-$_SESSION['sys_run_app'] = 'vm1230paklzis';
+
+/*
+* Start Session From This Page
+*/
+( session_status() == PHP_SESSION_NONE) ? session_start() : false;
 
 
 $GF_PATH 		= array(

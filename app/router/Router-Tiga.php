@@ -1,6 +1,6 @@
 <?php
 
-$_SESSION['sys_run_app'] ?? exit('403 You dont have permission to access / on this server...');
+defined('sys_run_app') OR exit('403 You dont have permission to access / on this server...');
 
 // Name space untuk router
 use System\GF_Router as GF;

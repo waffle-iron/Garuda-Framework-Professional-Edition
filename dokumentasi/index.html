@@ -940,9 +940,18 @@
                                 <li>
                                   Penting ... ! Selalu sertakan code berikut ini disetiap halaman, Router, Controller, Model ataupun View.
                                   Letakkan code di bagian paling atas.
+                                  <code>defined('sys_run_app') OR exit('403 You dont have permission to access / on this server...');</code>
                                 </li></br>
 
-                                <textarea name="name" rows="8" cols="80"><?php $_SESSION['sys_run_app'] ?? exit('403 You dont have permission to access / on this server...'); ?> </textarea>
+                                <textarea name="name" rows="8" cols="80"><?php defined('sys_run_app') OR exit('403 You dont have permission to access / on this server...'); ?> </textarea>
+
+                                <li>  
+                                  Penting... ! Setiap menambahkan direktory baru ! Apabila file index.php atau index.html tidak dibuat atau tidak digunakan, buat file index.php atau index.html, agar direktory tidak dapat di lihat , bisa menggunakan kode berikut untuk index.php kosong
+                                
+                                </li>
+
+                                  <textarea name="" rows="8" cols="80"><?php exit('403 You dont have permission to access / on this server...');
+                                  </textarea>
                                 <hr>
                                 </br>
                                 <li>

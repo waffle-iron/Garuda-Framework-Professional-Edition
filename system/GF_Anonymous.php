@@ -6,7 +6,7 @@
  * @author   Lamhot Simamora < lamhotsimamora36@gmail.com >
  */
 
-$_SESSION['sys_run_app'] ?? exit('403 You dont have permission to access / on this server...');
+defined('sys_run_app') OR exit('403 You dont have permission to access / on this server...');
 
 use System\GF_URL as GF;
 

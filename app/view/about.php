@@ -1,4 +1,4 @@
-<?php $_SESSION['sys_run_app'] ?? exit('403 You dont have permission to access / on this server...'); ?>
+<?php defined('sys_run_app') OR exit('403 You dont have permission to access / on this server...'); ?>
 <?=
 
 /*

@@ -7,7 +7,7 @@
  */
 namespace System{
 
-$_SESSION['sys_run_app'] ?? exit('403 You dont have permission to access / on this server...');
+defined('sys_run_app') OR exit('403 You dont have permission to access / on this server...');
 
   class GF_URL
   {

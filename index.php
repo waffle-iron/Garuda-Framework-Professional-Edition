@@ -5,10 +5,22 @@
  *
  * @package  GF-Pro
  * @author   Lamhot Simamora < lamhotsimamora36@gmail.com >
+ *
+ *
  */
 
 
 ob_start();
+
+/*
+*  sys_run_app = The Front Of Security
+*  you can change value of these sys_run_app
+*  Thank you for Mr.@Harjito from PHP Indonesia Community
+*/
+defined('sys_run_app') or define('sys_run_app','anda_bisa_isi_nilai_ini_dengan_apa_saja') ;
+
+
+
 /*
 * Membuat constanta __APP_PATH__ untuk path directory
 */
@@ -31,3 +43,10 @@ $app = require_once 'system/index.php';
 if (file_exists($app))
     return $app;
 
+
+
+/*
+*  If you respect me, i will respect you more
+*  else
+*  ....
+*/
