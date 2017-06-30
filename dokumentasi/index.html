@@ -726,6 +726,38 @@
                             }
                           </pre>
                         </div>
+			</hr>
+			    Berikut method-method yang diturunkan dari parent elDB
+                          <pre class="brush: html">
+                          /*
+                          *  Method Dari Parent elDB MySqli
+                          *
+                          *  -> setQuery()   < Wajib Periksa Petik Satu > 
+                          *     # getCount()   = mengembalikan jumlah datas
+                          *     # getData()    = mengembalikan data yang diinginkan 
+                          *     # getAllData() = mengembalikan seluruh data
+                          * 
+                          *  -> insert()     = insert data < Tidak Perlu Periksa Petik Satu >
+                          *  -> update()     = update data < Tidak Perlu Periksa Petik Satu >
+                          *  -> delete()     = delete data < Tidak Perlu Periksa Petik Satu >
+                          * 
+                          *  -> checkId()    = check data berdasarkan id primary key
+                          *
+                          *  -> CUD()        = method query bebas , insert update dan delete
+                          */
+                          
+                          </pre> <p>
+                          Pada method <font color="blue">getCount(),getData(), getAllData() dan CUD()</font>, 
+                          harus memasukkan query terlebih dahulu dengan method <font color="green">setQuery()</font>, 
+                          dan periksa input user secara manual seperti petik satu ', #hastag, <?php, dll.</p>
+                          </hr> </hr><p>
+                          Pada method <font color="blue">insert(),update(), delete() dan checkId()</font>, 
+                          tidak membutuhkan method setQuery(), dan untuk petik satu ', sudah otomatis,
+                          anda hanya tinggal periksa string yang lain seperti #hastag, <?php, dll.</p>
+                        </div>
+
+                        <code>Lihat contoh kode di Model-Satu</code>			      
+						      
                         <!-- end row -->
 
                     </section>
