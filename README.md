@@ -84,7 +84,11 @@ Pelajari library diatas melalui dokumentasi yang disertakan (Apabila dibutuhkan)
 ### Sponsor
 Jika anda berniat memberikan hosting atau domain, beritau saya melalui email diatas.
 
+### Testing Sistem
+Keseluruhan Sistem di Framework GF Pro sudah lulus uji coba, namun apabila anda menemukan error atau bug, silahkan pencet ISSUES.
+Dan apabila ingin menambahkan atau memperbaiki sistem silahkan.
 
+### Gift ?
 Apabila anda ingin mengirimkan ucapan terima kasih berupa Rupiah / Dollar , informasi Akun BANK tertera diatas. Terima Kasih
 Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLAK :).
 
