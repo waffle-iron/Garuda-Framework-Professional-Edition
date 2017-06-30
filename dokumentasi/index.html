@@ -869,6 +869,15 @@
                                 $data_array['email']    = "abcdef@gmail.com";
                                 GF::setView("contoh",$data_array);
                           </pre>
+			 atau mengekstrak variabel dari 2 array gunakan kode seperti berikut
+                          <pre class="brush: html">
+                                $data_array['username'] = "abcdef";
+                                $data_array['email']    = "abcdef@gmail.com";
+                                  
+                                $result['login'] = true;
+                                GF::setView("contoh",$data_array,$result);
+  
+                          </pre>			      
 
                         </div>
                         <!-- end row -->
