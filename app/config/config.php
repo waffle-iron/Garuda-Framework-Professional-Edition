@@ -75,7 +75,7 @@ $_helper_app 		= array('MyHelper');
 *  =========================
 *  - Router
 */
-$_router_app		= array('Router-Satu',"Router-Dua");
+$_router_app		= array('Router-Satu',"Router-Dua",'Router-Tiga');
 
 /*
 *  Atur Nama File
