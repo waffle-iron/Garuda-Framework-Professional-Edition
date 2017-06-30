@@ -112,7 +112,12 @@ else
 * Mendaftarkan file router kedalam aplikasi
 */
 $count_router = count($_router_app);
-if ($count_router==1)
+use System\GF_message as Error;
+if ($count_router==0)
+{
+	exit(Error::showError("ROUTER_NULL"));
+}
+else if ($count_router==1)
 {
     GF::setRouter($_router_app[0]);
 }
@@ -122,6 +127,7 @@ else
 		GF::setRouter($_router_app[$i]);
 	}
 }
+
 
 
 /*
