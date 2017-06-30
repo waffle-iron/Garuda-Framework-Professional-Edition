@@ -64,9 +64,9 @@ Didalam framework GF Pro ini, sudah disertakan beberapa library untuk PHP, CSS, 
 * PHP Mailer https://github.com/PHPMailer/PHPMailer/
 
 ## CSS
-* Bootstrap
-* Materealize
-* Skleton
+* Bootstrap http://getbootstrap.com/
+* Materealize http://materializecss.com/
+* Skleton http://getskeleton.com/
 
 ## Javascript
 * JQuery https://jquery.com/
@@ -74,6 +74,10 @@ Didalam framework GF Pro ini, sudah disertakan beberapa library untuk PHP, CSS, 
 * Hammer http://hammerjs.github.io/
 * Sweet Alert http://t4t5.github.io/sweetalert/
 
+## Tools
+* CKEditor http://ckeditor.com/
+
+Pelajari library diatas melalui dokumentasi yang disertakan, Di framework GF Pro hanya beberapa saja yang saya buatkan contohnya.
 
 ### Sponsor
 Jika anda berniat memberikan hosting atau domain, beritau saya melalui email diatas.
