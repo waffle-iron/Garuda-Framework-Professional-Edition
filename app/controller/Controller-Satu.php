@@ -8,12 +8,17 @@ class User_Controller
 	
 	function __construct()
 	{
-		$this->login();
-		GF::setView("login");
+		// $this->login();
+		// GF::setView("login");
 	}
 
 	public function login(){
+		// Logic here
 		echo "User Login";
 	}
 
+	public function logout(){
+		// Logic here
+		echo "User Logout";
+	}
 }
