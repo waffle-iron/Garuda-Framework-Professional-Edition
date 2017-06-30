@@ -46,7 +46,10 @@
 		  <span class="glyphicon glyphicon-home"></span> Home
 		</button>
 		<button type="button" class="btn btn-primary" onclick="_openUrl(full_url+'upload');">
-		  <span class="glyphicon glyphicon-file"></span> Upload
+		  <span class="glyphicon glyphicon-file"></span> Upload Gambar
+		</button>
+		<button type="button" class="btn btn-primary" onclick="_openUrl(full_url+'upload-semua-file');">
+		  <span class="glyphicon glyphicon-lightbulb"></span> Upload File
 		</button>
 		<button type="button" class="btn btn-primary" onclick="_openUrl(full_url+'data');">
 		  <span class="glyphicon glyphicon-pencil"></span> Data
