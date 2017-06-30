@@ -12,7 +12,7 @@ use System\GF_File as File;
 use System\GF_Upload as Upload;
 
 
-// Untuk halaman upload 
+// Contoh Untuk Upload Gambar 
 GF::Route("upload",function(){
 	
 	$data 		= array();
@@ -84,6 +84,55 @@ GF::Route("upload",function(){
 	// dengan mengekstrak array $data dan $boolean menjadi variabel
 	GF::setView("upload",$data,$boolean);
 });
+
+// Contoh Untuk Upload Semua Jenis File, Kecuali .php, .html 
+GF::Route("upload-semua-file",function(){
+	$boolean['result_upload'] = false;
+	$boolean['isset']         = false;
+	$data['message'] 		  = '';
+	if (isset($_POST['submit']))
+	{
+		$boolean['isset']         = true;
+		// gunakan method berikut ini untuk membuat $_FILES['file_name'] dari Form 
+		Upload::setFileUpload("semua_jenis_file");
+
+		// gunakan method berikut ini untuk mengecheck apakah file ada atau tidak
+		$check = Upload::isEmpty();
+			
+		if ($check)
+		{
+			// membuat nama file dengan random string 4 length
+			$filename = _randomStr(4);
+			
+			// jika method ini dihilangkan, maka nama file adalah original dari form input 
+			// Upload::setFileName($filename);
+
+			// memasukkan path di storage default -> "app/storage/example"
+			Upload::setPath('example');
+
+			// membuat batasan ukuran file maximum 1 MB
+			Upload::setMaxSize(1000000);
+
+		
+			$do = Upload::do();
+		    	
+	    	// memasukkan hasil upload kedalam array
+	    	$data['message'] = $do;
+	    	$boolean['result_upload'] = true;
+	    	// mengambil extension file
+	    	$data['filename']  = $filename.Upload::getExtension();
+		}
+		else
+		{
+			$data['message'] = "Pilih file terlebih dahulu ...";
+			$boolean['result_upload'] = false;
+		}
+	}
+
+	GF::setView("upload-semua-file",$boolean,$data);
+
+});
+
 
 // Untuk halaman Data 
 GF::Route("Data");
