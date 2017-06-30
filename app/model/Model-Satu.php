@@ -2,7 +2,22 @@
 
 $_SESSION['sys_run_app'] ?? exit('403 You dont have permission to access / on this server...');
 
-
+/*
+*  Method Dari Parent elDB MySqli
+*
+*  -> setQuery()   < Wajib Periksa Petik Satu > 
+*     # getCount() = mengembalikan jumlah datas
+*     # getData()  = mengembalikan data yang diinginkan 
+*     # getAllData = mengembalikan seluruh data
+* 
+*  -> insert()     = insert data < Tidak Perlu Periksa Petik Satu >
+*  -> update()     = update data < Tidak Perlu Periksa Petik Satu >
+*  -> delete()     = delete data < Tidak Perlu Periksa Petik Satu >
+* 
+*  -> checkId()    = check data berdasarkan id primary key
+*
+*  -> CUD()        = method query bebas , insert update dan delete
+*/
 
 
 // setiap membuat model harus menggunakan extends dengan elDB
@@ -14,36 +29,35 @@ class Data_User extends elDB
     private $password;
     private $id_user;
 
-    // set username
+   // set username
     public function setUsername($value)
     { 
-      // setiap memasukkan nilai ke variabel harus mereplace petik satu '
-      $this->username = trim(addslashes($value));
+      $this->username = trim($value);
     }
     // set email
     public function setEmail($value)
     {
-      $this->email = trim(addslashes($value));
+      $this->email = trim($value);
     }
     // set password
     public function setPassword($value)
     {
-      // gunakan method _md5(); untuk password
-      // method _md5 adalah hasil encrypt yang telah dimodifikasi
-      $this->password = trim(_md5($value));
+      // gunakan method _md5() atau method lainnya untuk password
+      // method _md5() adalah hasil md5 yang telah dimodifikasi
+      $this->password = _md5(trim($value));
     }
 
     // set id_user
      public function setIdUser($value)
     {
-      $this->id_user = trim(addslashes($value));
+      $this->id_user = trim($value);
     }
 
     // contoh ambil satu data berdasarkan column
   	public function getSingleData($column,$id)
   	{
-        $id  = trim(addslashes($id));
-    		$this->setQuery("select $column from t_user where id=$id limit 1");
+            $id  = addslashes(trim($id));
+    		$this->setQuery("select $column from t_user where id_user=$id limit 1");
     		$result = $this->getData();
   	    return  $result[$column];
   	}
@@ -114,4 +128,35 @@ class Data_User extends elDB
   		$result = $this->delete("t_user","id_user",$this->id_user);
   		return $result ? true : false;
   	}
+    
+    
+     public function createUpdateDelete($username,$email,$password,$id_user=''){
+      // 
+      // Query bebas Create, Update & Delete
+     
+      $id_user = addslashes(trim($id_user));
+      $username = addslashes(trim($username));
+      $username = addslashes(trim($email));
+      $password = addslashes(trim(_md5($password)));
+
+      /*
+      * contoh insert data
+      * $this->setQuery("insert into t_user(username,email,pass) values('$username','$email','$password')");
+      */
+
+      /*
+      * contoh update data
+      * $this->setQuery("update t_user set username='$username',email='$email',pass='$password' where id_user=$id_user");
+      */
+      
+      /*
+      * contoh delete data
+      * $this->setQuery("delete from t_user where id_user=$id_user");
+      */
+      
+      $result = $this->CUD();
+
+      return $result ? true : false;
+
+    }
 }
