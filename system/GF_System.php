@@ -188,6 +188,13 @@ $_SESSION['sys_run_app'] ?? exit('403 You dont have permission to access / on th
              $message = 'Maximum parameter function checkId() only -> <font color="red">5 column </font>';
              return self::template($message);
           }
+           else if ($type=='ROUTER_NULL')
+          {
+             $message = 'File <font color="red">Router</font> tidak ditemukan ! 
+                         Buat Terlebih Dahulu File Router ! 
+                         Lokasi -> <font color="green">"app/config/config.php"</font> { $_router_app }';
+             return self::template($message);
+          }
           else
           {
               return true;
