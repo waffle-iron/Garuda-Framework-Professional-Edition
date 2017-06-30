@@ -89,8 +89,8 @@ Keseluruhan Sistem di Framework GF Pro sudah lulus uji coba, namun apabila anda 
 Dan apabila ingin menambahkan atau memperbaiki sistem silahkan.
 
 ### Gift ?
-Apabila anda ingin mengirimkan ucapan terima kasih berupa Rupiah / Dollar , informasi Akun BANK tertera diatas. Terima Kasih
-Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLAK :).
+Apabila anda ingin mengirimkan ucapan terima kasih berupa Rupiah / Dollar , informasi Akun BANK tertera diatas. 
+Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLAK :). Terima Kasih
 
 ### Silahkan gunakan Garuda framework PHP ini dengan Bijak...
 
