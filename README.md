@@ -15,6 +15,9 @@ Selamat Datang di Repository Garuda Framework PHP Professional Edition
 * Akun Paypal         : <a href="https://www.paypal.me/lamhotsimamora" target="_blank">paypal.me/lamhotsimamora</a>
 * Akun BNI 022-448-93-37 a/n Lamhot Simamora
 
+
+### Visit Demo <a href="https://garudaframeworkpro.lamhotsimamora.com" target="_blank">click</a>
+
 ### Documentation [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://garudaframeworkpro.lamhotsimamora.com/dokumentasi/) 
 
 ### Pre-View Syntax
@@ -54,12 +57,9 @@ Framework by GF Pro Edition
 ### Sponsor
 Jika anda berniat memberikan hosting atau domain, beritau saya melalui email diatas.
 
-### Kunjungi Halaman GF-Pro <a href="https://garudaframeworkpro.lamhotsimamora.com" target="_blank">click</a>
 
-
-
-### Apabila anda ingin mengirimkan ucapan terima kasih berupa Rupiah / Dollar , informasi Akun BANK tertera diatas. Terima Kasih
-### Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLAK :).
+Apabila anda ingin mengirimkan ucapan terima kasih berupa Rupiah / Dollar , informasi Akun BANK tertera diatas. Terima Kasih
+Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLAK :).
 
 ### Silahkan gunakan Garuda framework PHP ini dengan Bijak...
 ### Salam ECHO dan Var Dump !
