@@ -10,6 +10,7 @@ class User_Controller
 	{
 		// $this->login();
 		// GF::setView("login");
+		echo "Constructor Run";
 	}
 
 	public function login(){
