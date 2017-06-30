@@ -46,7 +46,9 @@ $_SESSION['sys_run_app'] ?? exit('403 You dont have permission to access / on th
 
     public static function showError($type,$parameter=null,$parameter1=null)
     {
-
+          $GF_NOT_FOUND_STRING = 'GF Tidak dapat menemukan file ini ->';
+          $GF_R_M_C_V_L_H = "<font color='red'>'$parameter' </font> </br></br> Periksa kembali file";
+ 
           if ($type=='1')
           {
               $parameter= str_replace("/", "\\", $parameter);
@@ -61,6 +63,42 @@ $_SESSION['sys_run_app'] ?? exit('403 You dont have permission to access / on th
 
               $message = "GF Tidak dapat menemukan file ini ->
                         <font color='red'>'$parameter' </font> atau <font color='red'>'$parameter1' </font>  Periksa kembali file tersebut !";
+              return self::template($message);
+          }
+            else if ($type=='RU')
+          {
+              $parameter= str_replace("/", "\\", $parameter);
+
+              $message = $GF_NOT_FOUND_STRING.$GF_R_M_C_V_L_H." Router tersebut !";
+              return self::template($message);
+          }
+           else if ($type=='CU')
+          {
+              $parameter= str_replace("/", "\\", $parameter);
+
+             $message = $GF_NOT_FOUND_STRING.$GF_R_M_C_V_L_H." Controller tersebut !";
+              return self::template($message);
+             
+          }
+           else if ($type=='MU')
+          {
+              $parameter= str_replace("/", "\\", $parameter);
+
+              $message = $GF_NOT_FOUND_STRING.$GF_R_M_C_V_L_H." Model tersebut !";
+              return self::template($message);
+          }
+          else if ($type=='HU')
+          {
+              $parameter= str_replace("/", "\\", $parameter);
+
+              $message = $GF_NOT_FOUND_STRING.$GF_R_M_C_V_L_H." Helper tersebut !";
+              return self::template($message);
+          }
+           else if ($type=='LU')
+          {
+              $parameter= str_replace("/", "\\", $parameter);
+
+              $message = $GF_NOT_FOUND_STRING.$GF_R_M_C_V_L_H." Library tersebut !";
               return self::template($message);
           }
           else if ($type=='2')
@@ -723,6 +761,11 @@ class PrettyGET
           {
               return require_once $path;
           }
+           else
+          {
+            $msg_error = new GF_Message();
+            exit($msg_error->showError('MU',$path));
+          }
      }
 
      public static function setLibrary($file){
@@ -733,6 +776,11 @@ class PrettyGET
           {
               return require_once $path;
           }
+           else
+          {
+            $msg_error = new GF_Message();
+            exit($msg_error->showError('LU',$path));
+          }
      }
       public static function setController($file){
           $path = 'app/controller/'.$file.__ext_php__;
@@ -742,6 +790,11 @@ class PrettyGET
           {
               return require_once $path;
           }
+           else
+          {
+            $msg_error = new GF_Message();
+            exit($msg_error->showError('CU',$path));
+          }
      }
      public static function setHelper($file){
           $path = 'app/helper/'.$file.__ext_php__;
@@ -750,6 +803,11 @@ class PrettyGET
           if ($check->checkFile($path))
           {
               return require_once $path;
+          }
+          else
+          {
+            $msg_error = new GF_Message();
+            exit($msg_error->showError('HU',$path));
           }
      }
      public static function setDatabase($file,$data1=null,$data2=null){
@@ -811,6 +869,11 @@ class PrettyGET
           if ($check->checkFile($path))
           {
               return require_once $path;
+          }
+          else
+          {
+            $msg_error = new GF_Message();
+            exit($msg_error->showError('RU',$path));
           }
       }
      public static function errorPage($file){
