@@ -44,8 +44,10 @@ GF::Route("Professional /{ a }/{ b }",function($get){
 * Storage
 * Helper
 
-### License 
-Apabila anda ingin menggunakan framework ini untuk kebutuhan  Distribusi ataupun Komersial, Cukup berikan tulisan berikut ini di Footer website anda. Dan beritahu kepada saya melalui email, agar website anda saya cantumkan di Repository ini.
+### <a href="https://raw.githubusercontent.com/lamhotsimamora/Garuda-Framework-Professional-Edition/master/LICENSE" target="_blank">License GNU General Public License v3.0</a>
+
+### Feedback 
+Apabila anda ingin menggunakan framework ini untuk kebutuhan  distribusi ataupun komersial, Cukup berikan tulisan berikut ini di Footer website anda. Dan beritahu kepada saya melalui email, agar website anda saya cantumkan di Repository ini.
 ```go 
 powered by Garuda Framework Pro Edition 
 ```
