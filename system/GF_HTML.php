@@ -5,10 +5,12 @@
  * @package  GF-Pro
  * @author   Lamhot Simamora < lamhotsimamora36@gmail.com >
  */
+
+
 use System\GF_URL as URL;
 
-defined('sys_run_app') OR exit('403 You dont have permission to access / on this server...');
 
+defined('sys_run_app') OR exit('403 You dont have permission to access / on this server...');
 
 
 function _importCKEditor()
