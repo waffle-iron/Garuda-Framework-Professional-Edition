@@ -17,7 +17,7 @@ ob_start();
 *  you can change value of these sys_run_app
 *  Thank you for Mr.@Harjito from PHP Indonesia Community
 */
-defined('sys_run_app') or define('sys_run_app','anda_bisa_isi_nilai_ini_dengan_apa_saja') ;
+defined('sys_run_app') or define('sys_run_app','bi23mas12j321asdaskdn2312uj39gasdkdasdn') ;
 
 
 
