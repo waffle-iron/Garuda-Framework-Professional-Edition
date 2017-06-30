@@ -59,24 +59,24 @@ Framework by GF Pro Edition
 ### Library
 Didalam framework GF Pro ini, sudah disertakan beberapa library untuk PHP, CSS, dan Javascript , diantaranya
 
-## PHP
+### PHP
 * QR Code Generator http://phpqrcode.sourceforge.net/
 * FPdf http://www.fpdf.org/
 * Mobile Detect http://mobiledetect.net/
 * PHP Mailer https://github.com/PHPMailer/PHPMailer/
 
-## CSS
+### CSS
 * Bootstrap http://getbootstrap.com/
 * Materealize http://materializecss.com/
 * Skleton http://getskeleton.com/
 
-## Javascript
+### Javascript
 * JQuery https://jquery.com/
 * GF-1.js https://github.com/lamhotsimamora/GF-Javascript
 * Hammer http://hammerjs.github.io/
 * Sweet Alert http://t4t5.github.io/sweetalert/
 
-## Tools
+### Tools
 * CKEditor http://ckeditor.com/
 
 Pelajari library diatas melalui dokumentasi yang disertakan (Apabila dibutuhkan), Di framework GF Pro hanya beberapa saja yang saya buatkan contohnya. Jika tidak dibutuhkan anda bisa hapus librarynya. 
