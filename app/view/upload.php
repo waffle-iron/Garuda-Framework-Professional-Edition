@@ -6,7 +6,7 @@
 * 	Sudah termasuk Meta Name, Description, Img, dll  
 *	Sudah termasuk include bootstrap , JQuery , dan GF-1.js
 */
-_title("Upload");
+_title("Upload Gambar");
 
 
 _openBody();
