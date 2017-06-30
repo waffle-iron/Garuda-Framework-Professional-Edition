@@ -139,10 +139,11 @@ class Data_User extends elDB
       $username = addslashes(trim($email));
       $password = addslashes(trim(_md5($password)));
 
-      /*
+     /*
       * contoh insert data
-      * $this->setQuery("insert into t_user(username,email,pass) values('$username','$email','$password')");
       */
+       $this->setQuery("insert into t_user(username,email,pass) values('$username','$email','$password')");
+      
 
       /*
       * contoh update data
