@@ -88,6 +88,13 @@ Jika anda berniat memberikan hosting atau domain, beritau saya melalui email dia
 Keseluruhan Sistem di Framework GF Pro sudah lulus uji coba, namun apabila anda menemukan error atau bug, silahkan pencet ISSUES.
 Dan apabila ingin menambahkan atau memperbaiki sistem silahkan.
 
+### Mengapa harus menggunakan framework GF Pro ?
+* Karena framework ini sederhana
+* Sangat mudah dimengerti
+* Dokumentasi dibuat dalam bahasa Indonesia
+Ada banyak framework PHP diluar sana seperti laravel, codeigniter, yii dan lain-lain. 
+Bandingkan sendiri framework apa yang tepat untuk kebutuhan anda. That's your choice
+
 ### Gift ?
 Apabila anda ingin mengirimkan ucapan terima kasih berupa Rupiah / Dollar , informasi Akun BANK tertera diatas. 
 Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLAK :). Terima Kasih
