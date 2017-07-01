@@ -15,6 +15,12 @@ Selamat Datang di Repository Garuda Framework PHP Professional Edition
 * Akun Paypal         : <a href="https://www.paypal.me/lamhotsimamora" target="_blank">paypal.me/lamhotsimamora</a>
 * Akun BNI 022-448-93-37 a/n Lamhot Simamora
 
+### Instalasi / Clone / Download
+Silahkan clone just copy this code to your Git 
+```go 
+git clone https://github.com/lamhotsimamora/Garuda-Framework-Professional-Edition.git
+```
+atau langsung download saja source codenya.
 
 ### Visit Demo <a href="https://garudaframeworkpro.lamhotsimamora.com" target="_blank">click</a>
 
