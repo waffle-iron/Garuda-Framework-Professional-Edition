@@ -95,10 +95,11 @@ class Data_User extends elDB
   	 // contoh jika sudah ada maka return false
   		if ($result_email)	 { return false && exit; }
 
-      // contoh insert data 
-  		$result = $this->insert("t_user","username",$this->username,
-                                      "email",    $this->email,
-                                      "pass",     $this->password);
+        // contoh insert data dan replace string HTML 
+  		$result = $this->insert("t_user","username",_replaceHtml($this->username),
+                                      "email",    _replaceHtml($this->email),
+                                      "pass",     _replaceHtml($this->password));
+  	
   		return $result ? true : false;
   	}
 
