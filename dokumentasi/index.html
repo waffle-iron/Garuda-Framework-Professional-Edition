@@ -99,19 +99,21 @@
                                             Awal tujuan membuat framework ini adalah untuk kebutuhan pribadi saya agar dapat mempermudah saya dalam mengerjakan project website.
                                            <hr>
                                              Dan pada akhirnya saya putuskan untuk share framework ini secara FREE dan Open Source.
-                                             Ucapan terima kasih juga terhadap <a href="http://www.phpindonesia.id/" target="_blank">Komunitas PHP Indonesia </a> yang telah mendukung atas di publikasikannya framework PHP ini dan
-                                             juga atas JEJAK JEJAK para anggota di Group Facebook.
+                                             Ucapan terima kasih juga terhadap <a href="http://www.phpindonesia.id/" target="_blank">Komunitas PHP Indonesia </a> yang telah mendukung atas di publikasikannya framework PHP ini dan juga atas JEJAK JEJAK para anggota di Group Facebook.
                                                 <hr>
                                             Framework ini masih jauh dari sempurna dan masih sederhana, tapi paling tidak sudah dapat membantu setidaknya 50% pengerjaan website.
                                              Semoga framework ini dapat berguna dan bermanfaat.
+    <hr>
+                                              Saya membuat framework ini bukan karena saya hebat, tapi karena saya mau membagikan apa yang saya tau meskipun saya masih KROCO-KROCO. 
+                                             Saya juga tidak memaksa anda memakai framework ini, kalau anda mau pakai yang silahkan, kalau tidak ya silahkan. 
 
                                            <hr>
                                            <p>
-                                           Framework ini membutuhkan pengetahuan tentang OOP agar dapat digunakan dengan maksimal</p>
+                                           Framework ini membutuhkan sedikit pengetahuan tentang OOP agar dapat digunakan dengan maksimal</p>
                                            <hr>
                                            Apabila anda ingin menggunakan framework ini untuk kebutuhan  Distribusi ataupun Komersial
-                                           harap sertakan <strong><b>Garuda Framework Pro Edition</b></strong> dibagian footer websitenya.
-
+                                           harap sertakan feedback <strong><b>Garuda Framework Pro Edition</b></strong> dibagian footer websitenya. Orang yang baik akan selalu menghargai karya orang lain.
+  
                                          </br></br>
                                           <font color="blue">
                                           Dan saya juga tidak MENOLAK, apabila anda ingin memberikan ucapan Terima Kasih dalam bentuk Rupiah / Dollar, Informasi Akun BANK atau PAYPAL tertera diatas.
@@ -224,12 +226,12 @@
 
                         <pre class="brush: html">
                         return $app_production = array(
-          								'maintenance'  		=> false,
-          								'file_maintenance' 	=> 'maintenance',
-          								'notice_error' 		=> true,
-          								'time_zone'	   		=> 'Asia/Jakarta',
-          								'uri_parameter'		=> 'p',
-          								'start_benchmark'   => true);
+                          'maintenance'     => false,
+                          'file_maintenance'  => 'maintenance',
+                          'notice_error'    => true,
+                          'time_zone'       => 'Asia/Jakarta',
+                          'uri_parameter'   => 'p',
+                          'start_benchmark'   => true);
 
                         </pre>
                         <ul>
@@ -264,9 +266,9 @@
                             <hr> Jika anda ingin menggunakan PDO ,  DNS database yang tersedia di framework ini hanya tersedia untuk MySql,
                             untuk DNS database microsoft access, sqlite, sql server, dan oracle , anda harus mencari sendiri. Dan di framework ini saya rekomendasikan menggunakan MySqli
                               <pre class="brush: html">
-                                    $class_database 	 = array('mysqli','pdo');
+                                    $class_database    = array('mysqli','pdo');
 
-                                    $database_use	     = array('mysql','microsoft_access','sqlite','sql_server','oracle');
+                                    $database_use      = array('mysql','microsoft_access','sqlite','sql_server','oracle');
                               </pre>
                           </div>
                           <hr>
@@ -275,11 +277,11 @@
 
                               <pre class="brush: html">
 
-                                  $config_app 		 = array(
-                                          'run_database'      =>	true,
-                                          'multi_languange'	  =>	true,
+                                  $config_app      = array(
+                                          'run_database'      =>  true,
+                                          'multi_languange'   =>  true,
                                           'class_database'    => $class_database[0],
-                                          'database_use'	    => $database_use[0],
+                                          'database_use'      => $database_use[0],
                                           'default_404_page'  => '404'
                                                                   );
                               </pre>
@@ -296,11 +298,11 @@
                             </p>
 
                             <pre class="brush: html">
-                                  $config_database 	= array(
+                                  $config_database  = array(
                                                     'server_name'    => 'localhost',
-                                                    'user_name'		   => 'root',
-                                                    'database_name'	 => 'db_gf',
-                                                    'password'			 => ''
+                                                    'user_name'      => 'root',
+                                                    'database_name'  => 'db_gf',
+                                                    'password'       => ''
                                                                            );
                             </pre>
                           </div>
@@ -315,14 +317,14 @@
                                 );
 
 
-                                $language_data 	= array(
+                                $language_data  = array(
                                 'indonesia',
                                 'english',
                                 );
 
                                 $cookie_config      = array(
-                        							'name_language_cookie'  	 =>'app-language-GF',
-                        							'default_value_language' 	 => $language_name[0]);
+                                      'name_language_cookie'     =>'app-language-GF',
+                                      'default_value_language'   => $language_name[0]);
                               </pre>
                               <li> Line 1 : $language_name adalah key untuk membuat cookie multi language, jika anda ingin menambahkan bahasa lain maka harus menambahkan nilai di $language_data </li>
                               <li> Line 7 : $language_data adalah nama file yang akan dituju, yang terletak pada <font color="red">'app/config/language/contoh.php'</font></li>
@@ -336,12 +338,12 @@
                             , Secara default library yang tersedia yaitu PHP Mailer, PHPQrCode, Fpdf, dan Mobile Detect</p>
 
                             <pre class="brush: html">
-                            $_library_app    	= array(
-                          							'phpmailer/PHPMailerAutoload',
-                          							'phpqrcode/qrlib',
-                          							'fpdf/fpdf',
-                          							'Mobile_Detect/Mobile_Detect'
-															                             );
+                            $_library_app     = array(
+                                        'phpmailer/PHPMailerAutoload',
+                                        'phpqrcode/qrlib',
+                                        'fpdf/fpdf',
+                                        'Mobile_Detect/Mobile_Detect'
+                                                           );
                             </pre>
                             Untuk menambahkan library baru anda harus membuat folder didalam <font color="red">"app/library/nama_folder/"</font>, Kemudian tambahkan
                             kedalam array diatas, <font color="red">"nama_folder/nama_file"</font>.
@@ -353,7 +355,7 @@
                              yang anda butuhkan dalam pembuatan website</p>
 
                             <pre class="brush: html">
-                            $_helper_app 		= array('MyHelper');
+                            $_helper_app    = array('MyHelper');
                             </pre>
                             Isi array diatas adalah nama dari file helper pada <font color="red">"app/helper/nama_helper.php"</font>.
                           </div>
@@ -363,7 +365,7 @@
                             , Secara default router yang tersedia yaitu 'Router-Satu' dan 'Router-Dua'</p>
 
                             <pre class="brush: html">
-                          $_router_app		= array('Router-Satu',"Router-Dua");
+                          $_router_app    = array('Router-Satu',"Router-Dua");
                             </pre>
                             Isi array diatas adalah nama dari file router pada <font color="red">"app/router/nama_router.php"</font>.
                           </div>
@@ -373,7 +375,7 @@
                             , Secara default Controller yang tersedia yaitu 'Controller-Satu'</p>
 
                             <pre class="brush: html">
-                              $_controller_app 	= array('Controller-Satu');
+                              $_controller_app  = array('Controller-Satu');
 
                             </pre>
                             Isi array diatas adalah nama dari file controller pada <font color="red">"app/controller/nama_controller.php"</font>.
@@ -383,7 +385,7 @@
                             , Secara default yang tersedia yaitu 'Model-Satu'</p>
 
                             <pre class="brush: html">
-                              $_model_app 		= array('Model-Satu');
+                              $_model_app     = array('Model-Satu');
 
                             </pre>
                             Isi array diatas adalah nama dari file model pada <font color="red">"app/model/nama_model.php"</font>.
@@ -693,13 +695,13 @@
                           Untuk hapus data dapat menggunakan method delete(), sebagai contoh
                           <pre class="brush: html">
                               public function deleteData()
-                            	{
-                            		$result_value = $this->checkId("kolom primary key","nama tabel","where kolom primary key","value kolom primary keu");
-                            		if (! $result_value){ return false && exit; }
+                              {
+                                $result_value = $this->checkId("kolom primary key","nama tabel","where kolom primary key","value kolom primary keu");
+                                if (! $result_value){ return false && exit; }
 
-                            		$result = $this->delete("nama tabel","kolom primary key","value primary key");
-                            		return $result ? true : false;
-                            	}
+                                $result = $this->delete("nama tabel","kolom primary key","value primary key");
+                                return $result ? true : false;
+                              }
                               </pre>
                           untuk method delete(), maksimal parameter yaitu 4, contoh
                           <pre class="brush: html">
@@ -726,8 +728,8 @@
                             }
                           </pre>
                         </div>
-			</hr>
-			    Berikut method-method yang diturunkan dari parent elDB
+      </hr>
+          Berikut method-method yang diturunkan dari parent elDB
                           <pre class="brush: html">
                           /*
                           *  Method Dari Parent elDB MySqli
@@ -756,8 +758,8 @@
                           anda hanya tinggal periksa string yang lain seperti #hastag, <?php, dll.</p>
                         </div>
 
-                        <code>Lihat contoh kode di Model-Satu</code>			      
-						      
+                        <code>Lihat contoh kode di Model-Satu</code>            
+                  
                         <!-- end row -->
 
                     </section>
@@ -869,7 +871,7 @@
                                 $data_array['email']    = "abcdef@gmail.com";
                                 GF::setView("contoh",$data_array);
                           </pre>
-			 atau mengekstrak variabel dari 2 array gunakan kode seperti berikut
+       atau mengekstrak variabel dari 2 array gunakan kode seperti berikut
                           <pre class="brush: html">
                                 $data_array['username'] = "abcdef";
                                 $data_array['email']    = "abcdef@gmail.com";
@@ -877,7 +879,7 @@
                                 $result['login'] = true;
                                 GF::setView("contoh",$data_array,$result);
   
-                          </pre>			      
+                          </pre>            
 
                         </div>
                         <!-- end row -->
@@ -928,7 +930,42 @@
                               <li>
                               Helper bawaan dari GF Pro bisa dilihat di "System/GF_Helper.php", disana terdapat beberapa function yang siap digunakan</li> </br>
                                 <li>  Untuk template HTML anda bisa menggunakan cara saya, atau bisa juga kustom sendiri
-                                      sesuai kebutuhan sebagai contoh saya menggunakan froent end bootstrap , jquery , dan GF-1.js,  Lihat lokasi file di "System/GF_HTML.php" </li></br>
+                                      sesuai kebutuhan sebagai contoh saya menggunakan front end bootstrap , jquery , dan GF-1.js,  Lihat lokasi file di "System/GF_HTML.php" 
+                                </li>
+                                <hr>
+                                  Contoh template HTML yang saya gunakan, untuk mepersingkat kode : 
+
+                                  <pre class="brush: html"> 
+                                    // Membuat Object
+                                    $me = new Template_HTML;
+
+                                    // Membuat Judul HTML 
+                                    $me->setTitle("Home");
+
+                                    /*
+                                    * Memasukkan Informasi Meta image,author,title,description,name,copyright
+                                    */
+
+                                    $meta_html['image']     = 'example.png';
+                                    $meta_html['author']    = 'Lamhot Simamora';
+                                    $meta_html['title']     = 'Home';
+                                    $meta_html['description']   = 'Garuda Framework Pro';
+                                    $meta_html['name']          = 'Garuda Framework Pro';
+                                    $meta_html['copyright']     = 'Copyright@2017 All Right Reserved';
+
+                                    // Menyimpan Meta
+                                    $me->setMeta($meta_html);
+                                    // Memasukkan CSS jika ada
+                                    $me->setCSS("");
+                                    // Mengeluarkan hasil / output
+                                    $me->render();
+
+                                    // dan terakhir penutup HTMl
+                                    _closeBody();
+
+                                  </pre>
+                                </br>
+
                                 <li>  Untuk mengatur nama folder / direktori berada  pada "System/GF_Path.php"</li></br>
                                 <li>  Untuk mendirect ke halaman tertentu anda bisa gunakan code <font color="red">GF::directTo('Test'); </font> sama dengan
                                   <font color="red"> header('Location: http://www.example.com/Test'); </font> </li></br>
@@ -979,6 +1016,8 @@
                                 <li>
                                   Untuk membuat API sederhana, anda dapat melihat contohnya dihalaman Router Satu
                                 </li>
+
+                               
 
                                 <hr>
                                 <center>

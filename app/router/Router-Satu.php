@@ -16,7 +16,6 @@ use System\GF_File as File;
 GF::Route("","Home");
 GF::Route("Home");
 GF::Route("profile");
-GF::Route("about");
 GF::Route("sweet-alert","sweetalert");
 
 

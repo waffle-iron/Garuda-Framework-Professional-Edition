@@ -7,122 +7,102 @@
  */
 
 
-use System\GF_URL as URL;
 
 
-defined('sys_run_app') OR exit('403 You dont have permission to access / on this server...');
+	defined('sys_run_app') OR exit('403 You dont have permission to access / on this server...');
+
+	class Template_HTML
+	{
+		
+		private $title;
+		private $icon ;
+
+		private $css;
+		private $meta;
+
+		private $path_image;
 
 
-function _importCKEditor()
-{
-	return _importJS('vendor/editor/ckeditor.js').
-		   _importJS('vendor/editor/js/sample.js').
-		   _importCSS('vendor/editor/css/samples.css').
-		   _importCSS('vendor/editor/toolbarconfigurator/lib/codemirror/neo.css');
+		public function setTitle($value=null)
+		{
+			$this->title = $value;
+		}
+
+		public function setIcon($value= "test.png")
+		{
+
+			$this->icon = $value;
+		}
+
+		private function setPathImage()
+		{
+			$this->path_image = __full_url__.'app/storage/';
+		}
+
+		
+		public function setCSS($value=null)
+		{
+			if ($value != null)
+			{
+
+				$this->css = '<style>'.$value.'</style>';
+			}
+			else
+			{
+				$this->css = '';
+			}
+			
+		}
+
+		public function setMeta($meta_html = array())
+		{
+			$this->setPathImage();
+			$result  = '<meta name="og:image" 		content="'.$this->path_image.$meta_html['image'].'" />
+						<META name="ROBOTS" 		content="index" />
+						<meta name="image" 			content="'.$this->path_image.$meta_html['image'].'" />
+						<meta name="og:description" content="'.$meta_html['description'].'" />
+						<meta name="og:url" 		content="'.__full_url__.'" />
+						<meta name="og:title" 		content="'.$meta_html['title'].'" />
+						<meta name="Description" 	content="'.$meta_html['description'].'" />
+						<meta name="Author" 		content="'.$meta_html['author'].'" />
+						<meta name="copyright" 		content="'.$meta_html['copyright'].'" />
+						<meta name="language" 		content="Indonesian, English" />
+						<meta name="distribution" 	content="Global" />
+						<meta name="rating" 		content="General" />
+						<meta name="expires" 		content="1800" /> ';
+
+		   $this->meta = $result;
+		}
+
+	
+
+		public function render()
+		{
+
+			
+			echo '<!DOCTYPE html>
+					<html lang="en">
+					<head>
+					'.$this->meta.'
+					<link rel="shortcut icon" type="image/png" href="'.__view_url__.'vendor/icon/'.$this->icon.'"/>
+					<link rel="shortcut icon" type="image/png" href="'.__view_url__.'vendor/icon/'.$this->icon.'"/>
+					<meta charset="UTF-8">
+					<meta name="viewport" content="width=device-width, initial-scale=1">
+			        <title>'.$this->title.'</title>'
+			        ._importJQuery().'
+			        '._importSweetAlert().'
+			    	'._importGF().'<script> var full_url = "'.__full_url__.'"; </script>
+					'._importBootstrap().''
+					.$this->css.'</head><body>';
+		}
+
+		
 }
 
-
-function _importJQuery()
+function  _closeBody()
 {
-	$jquery_1 = "jquery-3.2.1.js";
-	$jquery_2 = "jquery-3.2.1.min.js";
-	$sweetAlert = "sweetalert-dev.js";
-	return '<script src="'.__view_url__.'vendor/js/jquery/'.$jquery_1.'"></script>
-	        <script src="'.__view_url__.'vendor/js/jquery/'.$jquery_2.'"></script>
-					<script src="'.__view_url__.'vendor/js/sweetalert/'.$sweetAlert.'"></script>';
- }
-
-
-function _importJS($path='')
-{
-	return '<script src="'.__view_url__.''.$path.'"></script>';
+return '</body></html>';
 }
-function _importJSOnline($url=''){
-	return '<script src="'.$url.'"></script>';
-}
-
-function _importCSS($path='')
-{
-	return '<link href="'.__view_url__.''.$path.'" rel="stylesheet">';
-}
-
-function _javascript($val='')
-{
-	return '<script type="text/javascript">'.$val.'</script>';
-}
-
-function _openBody()
-{
-	$meta_html =  array('content' 			=> "Garuda Framework",
-						'author'  			=> "Lamhot Simamora",
-						'description'		=> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-						'image'				=> __view_url__."img/GF-1-small.png",
-						'keywords'			=> "Framework php, Framework javascript",
-						'title' 			=> "Garuda Framework Title" ,
-						'copyright' 		=> "Copyright@2017 All Right Reserved");
-	return '</head><body>
-
-			<meta name="og:image" 	content="'.$meta_html['image'].'" />
-			<META name="ROBOTS" 	content="index" />
-			<meta name="image" 		content="'.$meta_html['image'].'" />
-
-			<meta name="og:description" content="'.$meta_html['description'].'" />
-
-			<meta name="og:url" 	content="'.__view_url__.'" />
-
-			<meta name="og:title" 	content="'.$meta_html['title'].'" />
-			<meta name="Description" content="'.$meta_html['description'].'" />
-
-			<meta name="Author" 	content="'.$meta_html['author'].'" />
-			<meta name="copyright" 	content="'.$meta_html['copyright'].'" />
-
-			<meta name="language" 	content="Indonesian, English" />
-			<meta name="distribution" content="Global" />
-			<meta name="rating" 	content="General" />
-			<meta name="expires" 	content="1800" />';
-}
-
-function _closeBody()
-{
-	return '</body></html>';
-}
-
-
-
-
-
-function _title($val=null)
-{
-
-
-    $sweetAlert = "vendor/js/sweetalert/sweetalert.css";
-
-	$icon    = "test.png";
-	$GF_1_JS = _importJS('vendor/js/gf/GF-1.js');
-
-	$result  =
-	'<!DOCTYPE html>
-		<html lang="en">
-		<head>
-		<link rel="shortcut icon" type="image/png" href="'.__view_url__.'vendor/icon/'.$icon.'"/>
-		<link rel="shortcut icon" type="image/png" href="'.__view_url__.'vendor/icon/'.$icon.'"/>
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-	        <title>'.$val.'</title>
-			'._importJQuery().'
-		    '.$GF_1_JS.''._importCSS($sweetAlert).'
-			<script> var full_url = "'.__full_url__.'"; </script>
-			'._importBootstrap();
-		return $result;
-}
-
-/* Bootstrap */
-
 function _createModal($id='',$header='',$content='',$type='')
 {	
 	if ($type=='large')
@@ -158,7 +138,59 @@ function _createModal($id='',$header='',$content='',$type='')
 		</div></br>';
 }
 
+
+
+
+function _importCKEditor()
+{
+	return _importJS('vendor/editor/ckeditor.js').
+		   _importJS('vendor/editor/js/sample.js').
+		   _importCSS('vendor/editor/css/samples.css').
+		   _importCSS('vendor/editor/toolbarconfigurator/lib/codemirror/neo.css');
+}
+
+function _importSweetAlert(){
+	$sweetAlertCSS = "vendor/js/sweetalert/sweetalert.css";
+	$sweetAlertJS = "sweetalert-dev.js";
+	return '<script src="'.__view_url__.'vendor/js/sweetalert/'.$sweetAlertJS.'"></script>'._importCSS($sweetAlertCSS);
+}
  function _importBootstrap()
  {
- 	return 	_importCSS("vendor/css/bootstrap/css/bootstrap.css")._importCSS("vendor/css/bootstrap/css/bootstrap-min.css")._importJS('vendor/css/bootstrap/js/bootstrap.js');
+ 
+ 	return 	_importCSS("vendor/css/bootstrap/css/bootstrap.css").
+ 			_importCSS("vendor/css/bootstrap/css/bootstrap-min.css").
+ 			_importJS('vendor/css/bootstrap/js/bootstrap.js');
  }
+
+function _importJQuery()
+{
+	$jquery_1 = "jquery-3.2.1.js";
+	$jquery_2 = "jquery-3.2.1.min.js";
+	
+	return '<script src="'.__view_url__.'vendor/js/jquery/'.$jquery_1.'"></script>
+	        <script src="'.__view_url__.'vendor/js/jquery/'.$jquery_2.'"></script>';
+ }
+
+
+function _importGF(){
+	return  _importJS('vendor/js/gf/GF-1.js');
+}
+
+
+/*
+*
+*/
+
+function _importJS($path='')
+{
+	return '<script src="'.__view_url__.''.$path.'"></script>';
+}
+function _importJSOnline($url=''){
+	return '<script src="'.$url.'"></script>';
+}
+
+function _importCSS($path='')
+{
+	return '<link href="'.__view_url__.''.$path.'" rel="stylesheet">';
+}
+
