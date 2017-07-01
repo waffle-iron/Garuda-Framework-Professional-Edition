@@ -64,3 +64,26 @@ GF::Route("direct",function(){
 	
 	GF::directTo("upload");
 });
+
+
+/*
+* Contoh menggunakan emoji lokasi "system/GF_Helper"
+* Kustom sendiri sesuai kebutuhan 
+* localhost/GF/emoji
+*/
+
+GF::Route("emoji",function(){
+	echo _emoji();
+	echo "<hr>";
+	echo _emoji('mens');
+	echo "<hr>";
+	echo _emoji('womans');
+	echo "<hr>";
+	echo _emoji('office');
+	echo "<hr>";
+	echo _emoji('toilet');
+	echo "<hr>";
+	echo _emoji('shower');
+	echo "<hr>";
+	echo _emoji('bicycle');
+});

@@ -290,9 +290,9 @@ function _bin2hex(int $val)
 }
 
 // Method ini untuk emoji, silahkan di kustom sendiri
-function _emoji($val)
+function _emoji($val=null)
 {
-
+	
 	$_COPYRIGHT_SIGN = "\u{00A9}";
 	$_REGISTERED_SIGN = "\u{00AE}";
 	$_MAHJONG_TILE_RED_DRAGON = "\u{1F004}";
@@ -368,6 +368,57 @@ function _emoji($val)
 	$_CONVENIENCE_STORE = "\u{1F3EA}";
 	$_SCHOOL = "\u{1F3EB}";
 	$_DEPARTMENT_STORE = "\u{1F3EC}";
+	$_NO_ENTRY_SIGN = "\u{1F6AB}";
+	$_SMOKING_SYMBOL = "\u{1F6AC}";
+	$_NO_SMOKING_SYMBOL = "\u{1F6AD}";
+	$_PUT_LITTER_IN_ITS_PLACE_SYMBOL = "\u{1F6AE}";
+	$_DO_NOT_LITTER_SYMBOL = "\u{1F6AF}";
+	$_POTABLE_WATER_SYMBOL = "\u{1F6B0}";
+	$_NON_POTABLE_WATER_SYMBOL = "\u{1F6B1}";
+	$_BICYCLE = "\u{1F6B2}";
+	$_NO_BICYCLES = "\u{1F6B3}";
+	$_BICYCLIST = "\u{1F6B4}";
+	$_MOUNTAIN_BICYCLIST = "\u{1F6B5}";
+	$_PEDESTRIAN = "\u{1F6B6}";
+	$_NO_PEDESTRIANS = "\u{1F6B7}";
+	$_CHILDREN_CROSSING = "\u{1F6B8}";
+	$_MENS_SYMBOL = "\u{1F6B9}";
+	$_WOMENS_SYMBOL = "\u{1F6BA}";
+	$_RESTROOM = "\u{1F6BB}";
+	$_BABY_SYMBOL = "\u{1F6BC}";
+	$_TOILET = "\u{1F6BD}";
+	$_WATER_CLOSET = "\u{1F6BE}";
+	$_SHOWER = "\u{1F6BF}";
+	$_BATH = "\u{1F6C0}";
+	$_BATHTUB = "\u{1F6C1}";
+	$_SPEAK_NO_EVIL_MONKEY = "\u{1F64A}";
+	$_HAPPY_PERSON_RAISING_ONE_HAND = "\u{1F64B}";
+	$_PERSON_RAISING_BOTH_HANDS_IN_CELEBRATION = "\u{1F64C}";
+	$_PERSON_FROWNING = "\u{1F64D}";
+	$_PERSON_WITH_POUTING_FACE = "\u{1F64E}";
+	$_PERSON_WITH_FOLDED_HANDS = "\u{1F64F}";
+	$_ROCKET = "\u{1F680}";
+	$_HELICOPTER = "\u{1F681}";
+	$_STEAM_LOCOMOTIVE = "\u{1F682}";
+	$_RAILWAY_CAR = "\u{1F683}";
+	$_HIGH_SPEED_TRAIN = "\u{1F684}";
+	$_HIGH_SPEED_TRAIN_WITH_BULLET_NOSE = "\u{1F685}";
+	$_TRAIN = "\u{1F686}";
+	$_METRO = "\u{1F687}";
+	$_LIGHT_RAIL = "\u{1F688}";
+	$_STATION = "\u{1F689}";
+	$_TRAM = "\u{1F68A}";
+	$_TRAM_CAR = "\u{1F68B}";
+	$_BUS = "\u{1F68C}";
+	$_ONCOMING_BUS = "\u{1F68D}";
+	$_TROLLEYBUS = "\u{1F68E}";
+	$_BUS_STOP = "\u{1F68F}";
+	$_MINIBUS = "\u{1F690}";
+	$_AMBULANCE = "\u{1F691}";
+	$_FIRE_ENGINE = "\u{1F692}";
+	$_POLICE_CAR = "\u{1F693}";
+	$_ONCOMING_POLICE_CAR = "\u{1F694}";
+	$_TAXI = "\u{1F695}";
 
 	$val = strtolower($val);
 
@@ -378,9 +429,23 @@ function _emoji($val)
 		case 'office':
 			return $_OFFICE_BUILDING;
 			break;
-	
+		case 'mens':
+			return $_MENS_SYMBOL;
+			break;
+		case 'womans':
+			return $_WOMENS_SYMBOL;
+			break;
+		case 'toilet':
+			return $_TOILET;
+			break;
+		case 'shower':
+			return $_SHOWER;
+			break;
+		case 'bicycle':
+			return $_BICYCLE;
+			break;
 		default:
-			# code...
+			return $_WATER_CLOSET;
 			break;
 	}
 }
