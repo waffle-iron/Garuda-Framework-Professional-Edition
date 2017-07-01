@@ -93,7 +93,7 @@ Dan apabila ingin menambahkan atau memperbaiki sistem silahkan.
 * Sangat mudah dimengerti
 * Dokumentasi dibuat dalam bahasa Indonesia
 Ada banyak framework PHP diluar sana seperti laravel, codeigniter, yii dan lain-lain. 
-Bandingkan sendiri framework apa yang tepat untuk kebutuhan anda. That's your choice
+Bandingkan sendiri framework apa yang tepat untuk kebutuhan anda. That's your choice.
 
 ### Gift ?
 Apabila anda ingin mengirimkan ucapan terima kasih berupa Rupiah / Dollar , informasi Akun BANK tertera diatas. 
