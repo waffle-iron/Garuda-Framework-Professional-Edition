@@ -87,3 +87,51 @@ GF::Route("emoji",function(){
 	echo "<hr>";
 	echo _emoji('bicycle');
 });
+
+
+/*
+* Contoh  1 membuat file Zip , "system/GF_Helper"
+* Menggunakan custom nama file
+* localhost/GF/zip1
+*/
+
+GF::Route("zip1",function(){
+	// File yang akan di Zip
+	$file_want_to_zip      =  array('example.png','php-creator.jpg','index.php');
+
+	// nama file hasil akhir
+	$file_name_to_zip        = array("1.png",'2.jpg','a.php');
+
+	// File akhir dari Zip
+	$filename_zip_end        = 'contoh-1.zip';
+
+	// Direktori yang akan dituju
+	$direktori_to_zip         = 'folder_zip/a/';
+
+	$result = _createZip($file_want_to_zip,$file_name_to_zip,$filename_zip_end,$direktori_to_zip);
+	var_dump($result);
+
+	
+});
+
+/*
+* Contoh 2 membuat file Zip , "system/GF_Helper"
+* Menggunakan nama asli file 
+* localhost/GF/zip2
+*/
+
+GF::Route("zip2",function(){
+	// File yang akan di Zip sekaligus nama file hasil akhir
+	$file_want_to_zip      =  array('example.png','php-creator.jpg','index.php');
+
+
+	// File akhir dari Zip
+	$filename_zip_end        = 'contoh-2.zip';
+
+	// Direktori yang akan dituju
+	$direktori_to_zip         = 'folder_zip/b/';
+
+	$result = _createZip($file_want_to_zip,$file_want_to_zip,$filename_zip_end,$direktori_to_zip);
+	var_dump($result);
+
+});

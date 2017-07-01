@@ -508,39 +508,45 @@ function _emoji($val=null)
 	}
 }
 
-function create_zip($files = array(),$destination = '',$overwrite = false) 
+function _createZip($file_want_to_zip = array(),$file_name_to_zip = array(),$filename_zip_end='default.zip',$direktori_to_zip='') 
 {
-	
-	if(file_exists($destination) && !$overwrite) { return false; }
-	
-	$valid_files = array();
+	$zip = new ZipArchive;
 
-	if(is_array($files)) {
-	
-		foreach($files as $file) {
-		
-			if(file_exists($file)) {
-				$valid_files[] = $file;
+
+
+	$path_zip    = __STORAGE_DIR__.$direktori_to_zip;
+
+	if (! is_dir($path_zip))
+	{
+		mkdir($path_zip, 0777, true);
+	}
+	if ($zip->open($path_zip.$filename_zip_end ,  ZipArchive::CREATE)) 
+	{
+
+		$length_file_want_to_zip  = count($file_want_to_zip);
+		$length_file_name_to_zip  = count($file_name_to_zip);
+
+		if ($length_file_name_to_zip == $length_file_name_to_zip)
+		{
+			for ($i=0; $i < $length_file_want_to_zip ; $i++) { 
+				$zip->addFile(__STORAGE_DIR__.$file_want_to_zip[$i], $file_name_to_zip[$i]);
 			}
 		}
-	}
-	
-	if(count($valid_files)) {
-	
-		$zip = new ZipArchive();
-		if($zip->open($destination,$overwrite ? ZIPARCHIVE::OVERWRITE : ZIPARCHIVE::CREATE) !== true) {
+		else if ($length_file_name_to_zip==0)
+		{
+			for ($i=0; $i < $length_file_want_to_zip ; $i++) { 
+				$zip->addFile(__STORAGE_DIR__.$file_want_to_zip[$i], $file_want_to_zip[$i]);
+			}
+		}
+		else
+		{
 			return false;
 		}
-	
-		foreach($valid_files as $file) {
-			$zip->addFile($file,$file);
-		}
-	
+
 		$zip->close();
-	
-		return file_exists($destination);
-	}
-	else
+		return true;
+	} 
+	else 
 	{
 		return false;
 	}
