@@ -95,7 +95,7 @@ class Data_User extends elDB
   	 // contoh jika sudah ada maka return false
   		if ($result_email)	 { return false && exit; }
 
-        // contoh insert data dan replace string HTML 
+      // contoh insert data dan replace string HTML 
   		$result = $this->insert("t_user","username",_replaceHtml($this->username),
                                       "email",    _replaceHtml($this->email),
                                       "pass",     _replaceHtml($this->password));
@@ -110,11 +110,11 @@ class Data_User extends elDB
       $result_value = $this->checkId("id_user","t_user","id_user",$this->id_user);
       if (! $result_value){ return false && exit; }
 
-       // contoh update data 
-      $result = $this->update("t_user","id_user",$this->id_user
-                                        ,"username",$this->username
-                                        ,"email"    ,$this->email
-                                        ,"pass"     , $this->password);
+       // contoh update data  dan replace string HTML 
+      $result = $this->update("t_user","id_user"  , $this->id_user
+                                      ,"username" , _replaceHtml($this->username)
+                                      ,"email"    , _replaceHtml($this->email)
+                                      ,"pass"     , _replaceHtml($this->password));
 
       return $result ? true : false;
     }

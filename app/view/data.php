@@ -112,6 +112,11 @@ _createModal("editData","Edit Data",
 			_focus("txt_pwd");
 			return;
 		}
+		// Contoh replace javascript syntax  dan tag php
+	
+		name = _replaceMaster(name);
+		email = _replaceMaster(email);
+		pswd = _replaceMaster(pswd);
 
 		// Ajax Post
 		_requestPOST(full_url+"ajax-insert","u="+name+"&e="+email+"&p="+pswd+"",function(res){
@@ -207,8 +212,12 @@ _createModal("editData","Edit Data",
 			_focus("txt_edit_password");
 			return;
 		}
-
-
+		// Contoh replace javascript syntax  dan tag php
+	
+		name_edit = _replaceMaster(name_edit);
+		email_edit = _replaceMaster(email_edit);
+		pswd_edit = _replaceMaster(pswd_edit);
+		
 		if (id_user_edit==='')
 			{
 				_writeAlert("message_edit","ID Data Tidak Ada","danger");
