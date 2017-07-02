@@ -1,7 +1,7 @@
 # Garuda-Framework-Professional-Edition
 Selamat Datang di Repository Garuda Framework PHP Professional Edition
 
-## We Are Not ARTISAN , but We Are Professional Edition 
+## We Are Not ARTISAN , but We Are PROFESSIONAL Edition 
 
 * Name                : Garuda Framework Professional Edition
 * Version           	: Undefined_1 
