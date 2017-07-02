@@ -105,12 +105,13 @@ Dan apabila ingin menambahkan atau memperbaiki sistem silahkan.
 * Karena framework ini sederhana dan professional
 * Sangat mudah dimengerti
 * Dokumentasi dibuat dalam bahasa Indonesia
-* Telah tersedia contoh Create Update Delete, Upload Gambar, dan Upload File
+* Telah tersedia contoh membuat Create Update Delete dari database, Upload Gambar, dan Upload File
 * Telah tersedia contoh membuat QR Code, PDF, Zip, dan Mobile Detect
-* Telah tersedia contoh membuat AJAX POST, AJAX GET
-* Telah tersedia contoh front end Sweet Alert
+* Telah tersedia contoh membuat AJAX POST, AJAX GET (Javascript)
+* Telah tersedia contoh membuat Sweet Alert (Javascript)
 * Telah tersedia contoh membuat multi bahasa / language
-* Telah tersedia HTML Template
+* Telah tersedia HTML Template (Meta HTML)
+* Telah tersedia contoh membuat API (Application Programming Interface) 
 * Sangat mudah jika ingin di upload ke hosting, Upload->Konfigurasi Database, Done
 * Mudah membuat parameter Pretty GET
 * Bisa dikustomisasi sesuai kebutuhan
