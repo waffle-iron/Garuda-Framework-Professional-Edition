@@ -95,7 +95,7 @@ Keseluruhan Sistem di Framework GF Pro sudah lulus uji coba, namun apabila anda 
 Dan apabila ingin menambahkan atau memperbaiki sistem silahkan.
 
 ### Mengapa harus menggunakan framework GF Pro ?
-* Karena framework ini sederhana
+* Karena framework ini sederhana dan professional
 * Sangat mudah dimengerti
 * Dokumentasi dibuat dalam bahasa Indonesia
 * Telah tersedia contoh Create Update Delete, Upload Gambar, dan Upload File
