@@ -26,7 +26,7 @@ or download.
 
 ### Lihat Demo <a href="https://garudaframeworkpro.lamhotsimamora.com" target="_blank">click</a>
 
-### Lihat Contoh Website Hasil Dari GF Pro <a href="https://www.chat.lamhotsimamora.com/login" target="_blank">click</a>
+### Lihat Contoh Website Hasil Dari GF Pro <a href="https://www.chat.lamhotsimamora.com/login" target="_blank">click</a> & <a href="https://s.lamhotsimamora.com/" target="_blank">click</a>
 
 ### Lihat Tutorial Di  Youtube {coming soon}
 
@@ -128,3 +128,7 @@ Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLAK :). Terima 
 Jangan Mempersulit Hal Yang Seharusnya Tidak Sulit
 Salam Echo dan Var Dump !
 ```
+
+
+#### <a href='https://coretancode.wordpress.com/'>CoretanCode</a> 
+#### <a href='https://www.youtube.com/channel/UCmsX7f_05_JfiWlVpSLWCCA'>Youtube Channel</a> 
