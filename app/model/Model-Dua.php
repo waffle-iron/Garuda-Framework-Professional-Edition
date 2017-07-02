@@ -6,13 +6,18 @@ defined('sys_run_app') OR exit('403 You dont have permission to access / on this
 /*
 * 	Contoh menggunakan MySqli Prepare Statement
 * 	Hanya untuk insert dan update
+*   Kustom sendiri sesuai kebutuhan
 */
 
 
 class Data extends elDB
 {
 	public function insertData(){
-			// prepare 
+			
+		    /*
+		    *   Prepare
+            *   Mengambil variabel $conn dari parent
+		    */
 			$stmt = self::$conn->prepare("INSERT INTO t_user (username, email, pass) VALUES (?, ?, ?)");
 
 			/*
@@ -52,7 +57,10 @@ class Data extends elDB
 	}
 
 	public function updateData($username,$email,$id_user){
-		  	// prepare 
+		  	/*
+		    *   Prepare
+            *   Mengambil variabel $conn dari parent
+		    */
 			$stmt = self::$conn->prepare("update t_user set username=?,email=? where id_user=?");
 
 			/*

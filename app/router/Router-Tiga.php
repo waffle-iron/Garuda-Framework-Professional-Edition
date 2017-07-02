@@ -138,13 +138,17 @@ GF::Route("zip2",function(){
 
 
 
-
+/*
+*  Contoh Router Untuk Menambah Data Dari Model-Dua
+*/
 GF::Route("insert",function(){
 	$d = new Data();
 	$d->insertData();
 });
 
-
+/*
+*  Contoh Router Untuk Mengubah Data Dari Model-Dua
+*/
 GF::Route("update",function(){
 	$d = new Data();
 	$d->updateData("abc","abc@gmail.com",32);
