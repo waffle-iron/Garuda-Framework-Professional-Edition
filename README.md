@@ -1,5 +1,5 @@
 # Garuda-Framework-Professional-Edition
-Selamat Datang di Repository Garuda Framework PHP Professional Edition
+Selamat Datang di Repository Garuda Framework PHP Professional Edition, Framework PHP ini mempermudah anda membuat website dalam hitungan hari baik website standart ataupun professional. Gak percaya ? 
 
 ## We Are Not ARTISAN , but We Are PROFESSIONAL Edition 
 
@@ -16,15 +16,21 @@ Selamat Datang di Repository Garuda Framework PHP Professional Edition
 * Akun BNI 022-448-93-37 a/n Lamhot Simamora
 
 ### Instalasi / Clone / Download
-Silahkan clone just copy this code to your Git 
+If you wanna clone this repository, just copy this code to your Git and ENTER
 ```go 
 git clone https://github.com/lamhotsimamora/Garuda-Framework-Professional-Edition.git
 ```
-atau langsung download saja source codenya.
+or download.
 
-### Visit Demo <a href="https://garudaframeworkpro.lamhotsimamora.com" target="_blank">click</a>
+### Minimum PHP 7.0 || 7.1 (Recommended)
 
-### Documentation [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://garudaframeworkpro.lamhotsimamora.com/dokumentasi/) 
+### Lihat Demo <a href="https://garudaframeworkpro.lamhotsimamora.com" target="_blank">click</a>
+
+### Lihat Contoh Website Hasil Dari GF Pro <a href="https://www.chat.lamhotsimamora.com/login" target="_blank">click</a>
+
+### Lihat Tutorial Di  Youtube {coming soon}
+
+### Lihat Dokumentasi  [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://garudaframeworkpro.lamhotsimamora.com/dokumentasi/) 
 
 ### Pre-View Syntax
 ### 
@@ -43,17 +49,18 @@ GF::Route("Professional /{ a }/{ b }",function($get){
 * Router 
 * Controller
 * Model
-* View
 
 ### Direktori 
 * Library
 * Storage
 * Helper
+* View
 
 ### <a href="https://raw.githubusercontent.com/lamhotsimamora/Garuda-Framework-Professional-Edition/master/LICENSE" target="_blank">License GNU General Public License v3.0</a>
 
 ### Feedback 
-Apabila anda ingin menggunakan framework ini untuk kebutuhan  distribusi ataupun komersial, Cukup berikan tulisan berikut ini di Footer website anda. Dan beritahu kepada saya melalui email, agar website anda saya cantumkan di Repository ini.
+Apabila anda ingin menggunakan framework ini untuk kebutuhan  distribusi ataupun komersial, cukup berikan tulisan berikut ini di Footer website anda. Dan beritahu kepada saya melalui email, agar website anda saya cantumkan di Repository ini. 
+Jika anda merasa rugi karena membuat footer tersebut, TIDAK USAH ditulis.
 ```go 
 powered by Garuda Framework Pro Edition 
 ```
