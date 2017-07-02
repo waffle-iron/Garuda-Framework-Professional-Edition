@@ -3,6 +3,10 @@ defined('sys_run_app') OR exit('403 You dont have permission to access / on this
 
 use System\GF_Router as GF;
 
+
+/*
+* Contoh Controller
+*/
 class User_Controller
 {
 	
@@ -10,7 +14,7 @@ class User_Controller
 	{
 		// $this->login();
 		// GF::setView("login");
-		echo "Constructor Run";
+		echo "Constructor Run <hr>";
 	}
 
 	public function login(){

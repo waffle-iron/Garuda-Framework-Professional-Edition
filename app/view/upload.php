@@ -12,7 +12,7 @@
 $me = new Template_HTML;
 
 // Membuat Judul HTML
-$me->setTitle("Home");
+$me->setTitle("Upload");
 
 /*
 * Memasukkan Informasi Meta image,author,title,description,name,copyright

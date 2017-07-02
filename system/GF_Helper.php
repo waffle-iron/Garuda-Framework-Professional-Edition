@@ -107,11 +107,10 @@ function _replaceSq($val='')
 {
 	return str_replace("'", "", trim($val));
 }
-function _fixString($str)
+function _fixString($str='')
 {
-  $res = addslashes($str);
+  $res = addslashes(trim($str));
   $res = str_replace("%HASTAG%", "#",$res);
-  
   return $res;
 }
 

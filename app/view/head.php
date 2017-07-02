@@ -59,10 +59,10 @@
 		  <span class="glyphicon glyphicon-leaf"></span> Sweet Alert
 		</button>
 		<br><br>
-		<button type="button" class="btn btn-success" onclick="_openUrl(full_url+'qrcode');">
+		<button type="button" class="btn btn-success" onclick="_newForm(false,full_url+'qrcode');">
 		  <span class="glyphicon glyphicon-pencil"></span> QRCode
 		</button>
-		<button type="button" class="btn btn-success" onclick="_openUrl(full_url+'pdf');">
+		<button type="button" class="btn btn-success" onclick="_newForm(false,full_url+'pdf');">
 		  <span class="glyphicon glyphicon-pencil"></span> PDF
 		</button>
 		<br><br>

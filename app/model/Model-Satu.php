@@ -9,6 +9,7 @@ defined('sys_run_app') OR exit('403 You dont have permission to access / on this
 *     # getCount() = mengembalikan jumlah datas
 *     # getData()  = mengembalikan data yang diinginkan 
 *     # getAllData = mengembalikan seluruh data
+*     # CUD()      = method query bebas , insert update dan delete
 * 
 *  -> insert()     = insert data < Tidak Perlu Periksa Petik Satu >
 *  -> update()     = update data < Tidak Perlu Periksa Petik Satu >
@@ -16,7 +17,6 @@ defined('sys_run_app') OR exit('403 You dont have permission to access / on this
 * 
 *  -> checkId()    = check data berdasarkan id primary key
 *
-*  -> CUD()        = method query bebas , insert update dan delete
 */
 
 
@@ -56,7 +56,7 @@ class Data_User extends elDB
     // contoh ambil satu data berdasarkan column
   	public function getSingleData($column,$id)
   	{
-            $id  = addslashes(trim($id));
+        $id  = addslashes(trim($id));
     		$this->setQuery("select $column from t_user where id_user=$id limit 1");
     		$result = $this->getData();
   	    return  $result[$column];
@@ -95,10 +95,11 @@ class Data_User extends elDB
   	 // contoh jika sudah ada maka return false
   		if ($result_email)	 { return false && exit; }
 
-      // contoh insert data dan replace string HTML 
-  		$result = $this->insert("t_user","username",_replaceHtml($this->username),
-                                      "email",    _replaceHtml($this->email),
-                                      "pass",     _replaceHtml($this->password));
+      // contoh insert data 
+  		$result = $this->insert("t_user","username",$this->username,
+                                      "email",    $this->email,
+                                      "pass",     $this->password
+                                                                   );
   	
   		return $result ? true : false;
   	}
@@ -110,11 +111,13 @@ class Data_User extends elDB
       $result_value = $this->checkId("id_user","t_user","id_user",$this->id_user);
       if (! $result_value){ return false && exit; }
 
-       // contoh update data  dan replace string HTML 
+      // contoh update data 
+      // 'update from t_user set username='$username',email='$email',pass='$pass' where id_user=$id_user'
       $result = $this->update("t_user","id_user"  , $this->id_user
-                                      ,"username" , _replaceHtml($this->username)
-                                      ,"email"    , _replaceHtml($this->email)
-                                      ,"pass"     , _replaceHtml($this->password));
+                                      ,"username" , $this->username
+                                      ,"email"    , $this->email
+                                      ,"pass"     , $this->password
+                                                                      );
 
       return $result ? true : false;
     }
@@ -125,7 +128,8 @@ class Data_User extends elDB
   		$result_value = $this->checkId("id_user","t_user","id_user",$this->id_user);
   		if (! $result_value){ return false && exit; }
 
-       // contoh delete data 
+      // contoh delete data 
+      // 'delete from t_user where id_user=$id_user'
   		$result = $this->delete("t_user","id_user",$this->id_user);
   		return $result ? true : false;
   	}
@@ -135,10 +139,10 @@ class Data_User extends elDB
       // 
       // Query bebas Create, Update & Delete
      
-      $id_user = addslashes(trim($id_user));
+      $id_user  = addslashes(trim($id_user));
       $username = addslashes(trim($username));
       $username = addslashes(trim($email));
-      $password = addslashes(trim(_md5($password)));
+      $password = addslashes(_md5(trim($password)));
 
      /*
       * contoh insert data

@@ -12,11 +12,41 @@ use System\GF_File as File;
 	pdf, dan Qrcode
 */
 
-
+/*
+* 	Contoh Route Kosong localhost/GF/
+*/
 GF::Route("","Home");
+
+
+
+/*
+*   Contoh Route -> localhost/GF/home
+*/
 GF::Route("Home");
+
+
+
+
+/*
+*   Contoh Route -> localhost/GF/profile
+*/
 GF::Route("profile");
+
+
+
+/*
+*   Contoh Route -> localhost/GF/sweet-alert
+*/
 GF::Route("sweet-alert","sweetalert");
+
+
+/*
+*   Contoh Route -> localhost/GF/example
+*   View didalam folder user 
+*/
+GF::Route("example","user/login");
+
+
 
 
 
@@ -150,6 +180,11 @@ GF::Route("change-language",function(){
 GF::Route("api/# token #",function($get){
 	$token = $get['token'] ?? false;
 
+	$data['username'] = '';
+	$data['email']    = '';
+	$data['phone']    = '';
+	$data['token']    = false;
+
 	if ($token != false)
 	{
 		if ($token=="abcde")
@@ -158,27 +193,9 @@ GF::Route("api/# token #",function($get){
 			$data['email']    = 'lamhotsimamora36@gmail.com';
 			$data['phone']    = '0812121212';
 			$data['token'] = true;
-			echo json_encode($data);
-			exit;
-		}
-		else
-		{
-			$data['username'] = '';
-			$data['email']    = '';
-			$data['phone']    = '';
-			$data['token'] = false;
-			echo json_encode($data);
 		}
 	}
-	else
-	{
-		$data['username'] = '';
-		$data['email']    = '';
-		$data['phone']    = '';
-		$data['token'] = false;
-		echo json_encode($data);
-	}
-	
+	echo json_encode($data);
 });
 
 

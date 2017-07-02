@@ -85,11 +85,15 @@ GF::Route("upload",function(){
 	GF::setView("upload",$data,$boolean);
 });
 
-// Contoh Untuk Upload Semua Jenis File, Kecuali .php, .html 
+// Contoh Untuk Upload Semua Jenis File, Kecuali file .php, .html , .php5 , .php7 
+// Lihat di "app/system/GF_System.php"
+
 GF::Route("upload-semua-file",function(){
+
 	$boolean['result_upload'] = false;
 	$boolean['isset']         = false;
 	$data['message'] 		  = '';
+
 	if (isset($_POST['submit']))
 	{
 		$boolean['isset']         = true;
@@ -152,7 +156,7 @@ GF::Route("delete-image",function(){
 		// Check apakah true 
 		if ($result)
 		{
-			e($result);
+			e('T');
 		}
 		else
 		{
@@ -239,12 +243,17 @@ GF::Route("load-data",function(){
 	{
 		
 		$user = new Data_User();
+
+		// Check jumlah data 
 	    $check_count = $user->countData();
 	  
+	  	// Jika jumlah data lebih dari 0
 	    if ($check_count>0)
 	    {
+	    	// Maka ambil seluruh data
 			$result = $user->getAll();
-				
+			
+			// Membuat template tabel
 			$data_table='<div class="table-responsive"><table class="table table-bordered">
 					    <thead>
 					      <tr>
@@ -257,13 +266,13 @@ GF::Route("load-data",function(){
 					    </thead>
 							<tbody>';
 			$i=1;
-
+			// Looping data
 			foreach ($result as $data => $user) 
 			{
 				$data_table .= ' <tr>
 				        <td>' . $i. '</td>
-				        <td>' . $user['username']. '</td>
-				        <td>' . $user['email']. '</td>
+				        <td>' . _fixString($user['username']). '</td>
+				        <td>' . _fixString($user['email']). '</td>
 		                <td>' . $user['pass']. '</td>
 		                <td>
 		                	<button type="button" id="'.$user['id_user'].'" class="btn btn-default btn-xs" onclick="showModalEdit(this.id)">Edit</button>

@@ -116,6 +116,7 @@ class elDB
                 {
                     while ($row = $result->fetch_assoc())
                     {
+
                         call_user_func($function_user,$row);
                     }
                 }
@@ -199,9 +200,6 @@ class elDB
         $query_master= "";
 
 
-        $column  = ($column);
-        $tblname = ($tblname);
-        $column1 = ($column1);
 
 
         $value1 = addslashes($value1);
@@ -323,18 +321,18 @@ class elDB
                                     $column9=false,$value9=false ){
 
 
-        $tblname = ($tblname);
-        $column1 = ($column1);
          if (is_string($value1) && $value1 != false )
         {
-              $value1  = addslashes($value1);
+              $value1  = addslashes(trim($value1));
+              $value1  = _replaceHtml($value1);
         }
 
 
 
         if (is_string($value2) && $value2 != false )
         {
-             $value2 = addslashes($value2);
+             $value2 = addslashes(trim($value2));
+             $value2  = _replaceHtml($value2);
         }
         else
         {
@@ -343,7 +341,8 @@ class elDB
 
          if (is_string($value3) && $value3 != false )
         {
-             $value3 = addslashes($value3) ;
+             $value3 = addslashes(trim($value3)) ;
+              $value3  = _replaceHtml($value3);
         }
          else
         {
@@ -352,7 +351,8 @@ class elDB
 
          if (is_string($value4) && $value4 != false )
         {
-             $value4 = addslashes($value4) ;
+             $value4 = addslashes(trim($value4)) ;
+              $value4  = _replaceHtml($value4);
         }
          else
         {
@@ -361,7 +361,8 @@ class elDB
 
          if (is_string($value5) && $value5 != false )
         {
-             $value5 = addslashes($value5) ;
+             $value5 = addslashes(trim($value5)) ;
+              $value5  = _replaceHtml($value5);
         }
          else
         {
@@ -370,7 +371,8 @@ class elDB
 
           if (is_string($value6) && $value6 != false )
         {
-             $value6 = addslashes($value6) ;
+             $value6 = addslashes(trim($value6)) ;
+              $value6  = _replaceHtml($value6);
         }
          else
         {
@@ -379,7 +381,8 @@ class elDB
 
           if (is_string($value7) && $value7 != false )
         {
-             $value7 = addslashes($value7) ;
+             $value7 = addslashes(trim($value7)) ;
+              $value7  = _replaceHtml($value7);
         }
          else
         {
@@ -388,7 +391,8 @@ class elDB
 
        if (is_string($value8) && $value8 != false )
         {
-             $value8 = addslashes($value8) ;
+             $value8 = addslashes(trim($value8)) ;
+              $value8  = _replaceHtml($value8);
         }
          else
         {
@@ -397,7 +401,8 @@ class elDB
 
        if (is_string($value9) && $value9 != false )
         {
-             $value9 = addslashes($value9) ;
+             $value9 = addslashes(trim($value9)) ;
+              $value9  = _replaceHtml($value9);
         }
          else
         {
@@ -575,18 +580,17 @@ class elDB
                                     $column3=false,$value3=false,
                                     $column4=false,$value4=false )
     {
-        $tblname = ($tblname);
-        $column1 = ($column1);
-        $value1  = addslashes($value1);
+ 
+        $value1  = addslashes(trim($value1));
 
         $column2 != false ?  $column2 = ($column2) : $column2 = false;
-        $value2 != false ?  $value2 = addslashes($value2) : $value2 = false;
+        $value2 != false ?  $value2 = addslashes(trim($value2)) : $value2 = false;
 
         $column3 != false ?  $column3 = ($column3) : $column3 = false;
-        $value3 != false ?  $value3 = addslashes($value3) : $value3 = false;
+        $value3 != false ?  $value3 = addslashes(trim($value3)) : $value3 = false;
 
         $column4 != false ?  $column4 = ($column4) : $column4 = false;
-        $value4 != false ?  $value4 = addslashes($value4) : $value4 = false;
+        $value4 != false ?  $value4 = addslashes(trim($value4)) : $value4 = false;
 
         if (empty($tblname) || empty($column1) || empty($value1))
         {
@@ -690,35 +694,33 @@ class elDB
                                 $column9=false,$value9=false )
      {
 
-        $tblname            = ($tblname);
-        $parameter1         = ($parameter1);
-        $value_parameter1   = addslashes($value_parameter1);
-        $column1            = ($column1);
-        $value1             = addslashes($value1);
+    
+        $value_parameter1   = _replaceHtml(addslashes(trim($value_parameter1)));
+        $value1             = _replaceHtml(addslashes(trim($value1)));
 
         $column2 != false ?  $column2 = ($column2) : $column2 = false;
-        $value2 != false ?  $value2 = addslashes($value2) : $value2 = false;
+        $value2 != false ?  $value2 = _replaceHtml(addslashes(trim($value2))) : $value2 = false;
 
         $column3 != false ?  $column3 = ($column3) : $column3 = false;
-        $value3 != false ?  $value3 = addslashes($value3) : $value3 = false;
+        $value3 != false ?  $value3 = _replaceHtml(addslashes(trim($value3))) : $value3 = false;
 
         $column4 != false ?  $column4 = ($column4) : $column4 = false;
-        $value4 != false ?  $value4 = addslashes($value4) : $value4 = false;
+        $value4 != false ?  $value4 = _replaceHtml(addslashes(trim($value4))) : $value4 = false;
 
         $column5 != false ?  $column5 = ($column5) : $column5 = false;
-        $value5 != false ?  $value5 = addslashes($value5) : $value5 = false;
+        $value5 != false ?  $value5 = _replaceHtml(addslashes(trim($value5))) : $value5 = false;
 
         $column6 != false ?  $column6 = ($column6) : $column6 = false;
-        $value6 != false ?  $value6 = addslashes($value6) : $value6 = false;
+        $value6 != false ?  $value6 = _replaceHtml(addslashes(trim($value6))) : $value6 = false;
 
         $column7 != false ?  $column7 = ($column7) : $column7 = false;
-        $value7 != false ?  $value7 = addslashes($value7) : $value7 = false;
+        $value7 != false ?  $value7 = _replaceHtml(addslashes(trim($value7))) : $value7 = false;
 
         $column8 != false ?  $column8 = ($column8) : $column8 = false;
-        $value8 != false ?  $value8 = addslashes($value8) : $value8 = false;
+        $value8 != false ?  $value8 = _replaceHtml(addslashes(trim($value8))) : $value8 = false;
 
         $column9 != false ?  $column9 = ($column9) : $column9 = false;
-        $value9 != false ?  $value9 = addslashes($value9) : $value9 = false;
+        $value9 != false ?  $value9 = _replaceHtml(addslashes(trim($value9))) : $value9 = false;
 
 
 
