@@ -99,9 +99,11 @@ Dan apabila ingin menambahkan atau memperbaiki sistem silahkan.
 * Sangat mudah dimengerti
 * Dokumentasi dibuat dalam bahasa Indonesia
 * Telah tersedia contoh Create Update Delete, Upload Gambar, dan Upload File
-* Telah tersedia contoh membuat QR Code, PDF, dan Zip
+* Telah tersedia contoh membuat QR Code, PDF, Zip, dan Mobile Detect
 * Telah tersedia contoh membuat AJAX POST, AJAX GET
 * Telah tersedia contoh front end Sweet Alert
+* Telah tersedia contoh membuat multi bahasa / language
+* Telah tersedia HTML Template
 * Sangat mudah jika ingin di upload ke hosting, Upload->Konfigurasi Database, Done
 * Mudah membuat parameter Pretty GET
 * Bisa dikustomisasi sesuai kebutuhan
@@ -117,5 +119,5 @@ Saya tidak MEMINTA uang anda, tapi jika diberikan saya tidak MENOLAK :). Terima 
 
 ```go 
 Jangan Mempersulit Hal Yang Seharusnya Tidak Sulit
-Salam ECHO dan Var Dump !
+Salam Echo dan Var Dump !
 ```
