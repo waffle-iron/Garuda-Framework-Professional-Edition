@@ -143,7 +143,8 @@ GF::Route("zip2",function(){
 */
 GF::Route("insert",function(){
 	$d = new Data();
-	$d->insertData();
+	$result = $d->insertData();
+	var_dump($result);
 });
 
 /*

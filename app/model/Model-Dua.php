@@ -18,7 +18,7 @@ class Data extends elDB
 		    *   Prepare
             *   Mengambil variabel $conn dari parent
 		    */
-			$stmt = self::$conn->prepare("INSERT INTO t_user (username, email, pass) VALUES (?, ?, ?)");
+			$go = self::$conn->prepare("INSERT INTO t_user (username, email, pass) VALUES (?, ?, ?)");
 
 			/*
 			Penjelasan bind_param
@@ -31,28 +31,37 @@ class Data extends elDB
 			*/
 
 			// bind
-			$stmt->bind_param("sss", $username, $email, $pass);
+			$go->bind_param("sss", $username, $email, $pass);
 
 			// set parameters and execute
 			$username   = "aaaaaaaaa";
 			$pass 		= _md5("12345");
 			$email      = "aaaaaaaaa@example.com";
-			$stmt->execute();
+			
+			$result1    =  $go->execute();
 
 			$username    = "bbbbbbbbbbb";
 			$pass 		= _md5("12345");
 			$email       = "bbbbbbbbbbb@example.com";
-			$stmt->execute();
+
+			$result2    =  $go->execute();
 
 			$username    = "cccccccc";
 			$pass 		= _md5("12345");
 			$email        = "cccccccc@example.com";
-			$stmt->execute();
 
-			$result = $stmt->close();
+			$result3    =  $go->execute();
+
+		    $go->close();
 		
-		    var_dump($result);
-
+		    if ($result1==true && $result2==true && $result3==true)
+		    {
+		    	return true;
+		    }
+		    else
+		    {
+		    	return false;
+		    }
 			
 	}
 
@@ -61,7 +70,7 @@ class Data extends elDB
 		    *   Prepare
             *   Mengambil variabel $conn dari parent
 		    */
-			$stmt = self::$conn->prepare("update t_user set username=?,email=? where id_user=?");
+			$go = self::$conn->prepare("update t_user set username=?,email=? where id_user=?");
 
 			/*
 			Penjelasan bind_param
@@ -74,10 +83,12 @@ class Data extends elDB
 			*/
 
 			// bind
-			$stmt->bind_param("ssi", $username, $email, $id_user);
+			$go->bind_param("ssi", $username, $email, $id_user);
 
-			// set parameters and execute
-			$result = $stmt->execute();
+			// execute
+			$result = $go->execute();
+
+		    $go->close();
 		    var_dump($result);
 	}
 }
