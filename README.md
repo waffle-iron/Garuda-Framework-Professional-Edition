@@ -43,6 +43,12 @@ GF::Route("Professional /{ a }/{ b }",function($get){
 	$b = $get['b'] ?? false;
 	echo "Hello World !";
 });
+GF::Route("User/# id_user #/# type #/",function($get){
+    $id_user = $get['id_user'] ?? false;
+    $type    = $get['type']    ?? false;
+    
+    GF::setView("user/view");
+});
 ```
 
 ### Flow System
