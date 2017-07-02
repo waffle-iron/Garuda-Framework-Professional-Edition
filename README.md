@@ -60,7 +60,8 @@ GF::Route("Professional /{ a }/{ b }",function($get){
 
 ### Feedback 
 Apabila anda ingin menggunakan framework ini untuk kebutuhan  distribusi ataupun komersial, cukup berikan tulisan berikut ini di Footer website anda. Dan beritahu kepada saya melalui email, agar website anda saya cantumkan di Repository ini. 
-Jika anda merasa rugi karena membuat footer tersebut, TIDAK USAH ditulis.
+Jika anda merasa rugi karena membuat footer tersebut, TIDAK USAH ditulis. Programmer Professional Selalu Memberikan Feedback Terhadap Sistem Yang Digunakan.
+
 ```go 
 powered by Garuda Framework Pro Edition 
 ```
@@ -99,9 +100,9 @@ Jika anda berniat memberikan hosting atau domain, beritau saya melalui email dia
 
 ### Testing Sistem
 Keseluruhan Sistem di Framework GF Pro sudah lulus uji coba, namun apabila anda menemukan error atau bug, silahkan pencet ISSUES.
-Dan apabila ingin menambahkan atau memperbaiki sistem silahkan.
+Dan apabila ingin menambahkan atau memperbaiki sistem silahkan di fork lalu edit sendiri atau pull request atau beritahu melalui email.
 
-### Mengapa harus menggunakan framework GF Pro ?
+### Mengapa harus menggunakan framework Garuda Framework Pro ?
 * Karena framework ini sederhana dan professional
 * Sangat mudah dimengerti
 * Dokumentasi dibuat dalam bahasa Indonesia
