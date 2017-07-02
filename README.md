@@ -112,9 +112,11 @@ Dan apabila ingin menambahkan atau memperbaiki sistem silahkan.
 * Telah tersedia contoh membuat multi bahasa / language
 * Telah tersedia HTML Template (Meta HTML)
 * Telah tersedia contoh membuat API (Application Programming Interface) 
-* Sangat mudah jika ingin di upload ke hosting, Upload->Konfigurasi Database, Done
-* Mudah membuat parameter Pretty GET
+* Sangat mudah jika ingin di upload ke hosting, Upload -> Konfigurasi Database -> Done
+* Mudah membuat parameter Pretty GET seperti www.example.com/user/12 atau www.example.com/post/2017/12/28/Judul-Artikel atau www.example.com/api/v9232jasd2932j3ad92323/1/
 * Bisa dikustomisasi sesuai kebutuhan
+* Terdapat driver database MySqli dan PDO, namun saya memfokuskan framework ini khusus untuk MySqli
+* Tersedia template sederhana untuk menampilkan pesan error, yang dapat membantu anda dalam membuat website.
 
 Ada banyak framework PHP diluar sana seperti laravel, codeigniter, yii dan lain-lain. 
 Bandingkan sendiri framework apa yang tepat untuk kebutuhan anda. That's your choice.
