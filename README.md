@@ -98,6 +98,14 @@ Dan apabila ingin menambahkan atau memperbaiki sistem silahkan.
 * Karena framework ini sederhana
 * Sangat mudah dimengerti
 * Dokumentasi dibuat dalam bahasa Indonesia
+* Telah tersedia contoh Create Update Delete, Upload Gambar, dan Upload File
+* Telah tersedia contoh membuat QR Code, PDF, dan Zip
+* Telah tersedia contoh membuat AJAX POST, AJAX GET
+* Telah tersedia contoh front end Sweet Alert
+* Sangat mudah jika ingin di upload ke hosting, Upload->Konfigurasi Database, Done
+* Mudah membuat parameter Pretty GET
+* Bisa dikustomisasi sesuai kebutuhan
+
 Ada banyak framework PHP diluar sana seperti laravel, codeigniter, yii dan lain-lain. 
 Bandingkan sendiri framework apa yang tepat untuk kebutuhan anda. That's your choice.
 
