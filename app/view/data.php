@@ -229,9 +229,8 @@ _createModal("editData","Edit Data",
 		}
 		// Contoh replace javascript syntax  dan tag php
 	
-	/*	name_edit   = _replaceMaster(name_edit);
-		email_edit  = _replaceMaster(email_edit);
-		pswd_edit   = _replaceMaster(pswd_edit);*/
+		name_edit   = _replaceMaster(name_edit);
+		
 		
 		if (id_user_edit==='')
 			{

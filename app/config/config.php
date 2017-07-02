@@ -90,4 +90,4 @@ $_controller_app 	= array('Controller-Satu');
 *  =========================
 *  - Controller
 */
-$_model_app 		= array('Model-Satu');
+$_model_app 		= array('Model-Satu','Model-Dua');

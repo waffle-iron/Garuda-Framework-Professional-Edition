@@ -135,3 +135,17 @@ GF::Route("zip2",function(){
 	var_dump($result);
 
 });
+
+
+
+
+GF::Route("insert",function(){
+	$d = new Data();
+	$d->insertData();
+});
+
+
+GF::Route("update",function(){
+	$d = new Data();
+	$d->updateData("abc","abc@gmail.com",32);
+});

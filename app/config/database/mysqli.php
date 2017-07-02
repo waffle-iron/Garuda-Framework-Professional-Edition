@@ -7,7 +7,7 @@ use System\GF_Message as GF;
 class elDB 
 {
 
-    private static $conn       =   false;
+    protected static $conn       =   false;
 
     private static $server_name;
     private static $db_name;

@@ -321,3 +321,8 @@ GF::Route("ajax-delete",function(){
 		e("F");
 	}
 });
+
+
+/*
+*	Next ->  Router Tiga
+*/

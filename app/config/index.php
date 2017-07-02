@@ -29,7 +29,19 @@ if ($config_app['run_database'])
 
 
 	GF::setDatabase($config_app['class_database']);
-	GF::setModel($_model_app[0]);
+
+	$count_model = count($_model_app);
+	if ($count_model==0)
+	{
+		GF::setModel($_model_app[0]);
+	}
+	else
+	{
+		for ($i=0; $i < $count_model ; $i++) {
+			GF::setModel($_model_app[$i]);
+	    }
+	}
+	
 }
 
 
