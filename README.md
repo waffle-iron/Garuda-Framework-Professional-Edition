@@ -70,7 +70,7 @@ GF::Route("User/# id_user #/# type #/",function($get){
 
 ### Feedback 
 Apabila anda ingin menggunakan framework ini untuk kebutuhan  distribusi ataupun komersial, cukup berikan tulisan berikut ini di Footer website anda. Dan beritahu kepada saya melalui email, agar website anda saya cantumkan di Repository ini. 
-Jika anda merasa rugi karena membuat footer tersebut, TIDAK USAH ditulis. Programmer Professional Selalu Memberikan Feedback Terhadap Sistem Yang Digunakan.
+Jika anda merasa rugi karena membuat footer tersebut, JANGAN DI CLONE / DOWNLOAD. Karena Programmer Professional Selalu Memberikan Feedback Terhadap Sistem Yang Digunakan.
 
 ```go 
 powered by Garuda Framework Pro Edition 
