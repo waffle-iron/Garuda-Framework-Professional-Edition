@@ -154,3 +154,8 @@ GF::Route("update",function(){
 	$d = new Data();
 	$d->updateData("abc","abc@gmail.com",32);
 });
+
+
+/*
+*	Next ->  Router Empat
+*/

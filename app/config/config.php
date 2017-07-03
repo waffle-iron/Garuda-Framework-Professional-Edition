@@ -36,19 +36,20 @@ $config_database 	= array(
 
 $language_name     = array(
 							'ind',
-							'eng',
-											);
+							'eng'
+									);
 
 
 $language_data 	= array(
 							'indonesia',
-							'english',
+							'english'
 							          );
 
 
 $cookie_config      = array(
 							'name_language_cookie'  	 =>'app-language-GF',
-							'default_value_language' 	 => $language_name[0]);
+							'default_value_language' 	 => $language_name[0] 
+							                                                  );
 
 
 /*
@@ -75,7 +76,7 @@ $_helper_app 		= array('MyHelper');
 *  =========================
 *  - Router
 */
-$_router_app		= array('Router-Satu',"Router-Dua",'Router-Tiga');
+$_router_app		= array('Router-Satu',"Router-Dua",'Router-Tiga','Router-Empat');
 
 /*
 *  Atur Nama File
