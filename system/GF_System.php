@@ -1004,7 +1004,7 @@ class PrettyGET
       // Type file TRUE for image file only
       private static $type_file   = false;
 
-      private static $image_only  = array(".png", ".gif", ".jpg", ".bmp");
+      private static $image_only  = array(".png", ".gif", ".jpg", ".bmp",".jpeg");
 
       private static $file_name_upload  = false;
 
