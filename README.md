@@ -28,7 +28,8 @@ or download.
 
 ### Lihat Contoh Website Hasil Dari GF Pro <a href="https://www.chat.lamhotsimamora.com/login" target="_blank">click</a> & <a href="https://s.lamhotsimamora.com/" target="_blank">click</a>
 
-### Lihat Tutorial Di  Youtube {coming soon}
+### Lihat Tutorial Di  Youtube 
+<a href="https://www.youtube.com/watch?v=cw3NeFtwqAg">*part1 Clone Repository & Konfigurasi</a>
 
 ### Lihat Dokumentasi  [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://garudaframeworkpro.lamhotsimamora.com/dokumentasi/) 
 
