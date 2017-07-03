@@ -1012,7 +1012,7 @@ class PrettyGET
       private static $allow_upload = true;
 
       // danger file
-      private static $danger_file = array('.html','.php','.js','.exe','.php5','.php7');
+      private static $danger_file = array('.html','.php','.js','.exe','.php5','.php7','.htaccess');
 
       private static $original_name ;
 
