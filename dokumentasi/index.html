@@ -1017,8 +1017,16 @@
                                   Untuk membuat API sederhana, anda dapat melihat contohnya dihalaman Router Satu
                                 </li>
 
-                               
-
+                               <li> 
+                                  Untuk upload file, jenis file yang tidak diizinkan untuk diupload bisa dikustom, 
+                                  lihat lokasinya di app/GF_System/ , dibagian class GF_File , cari kode seperti dibawah
+                                
+                               </li>
+                               <pre class="brush: html"> 
+                             private static $danger_file = array('.html','.php','.js','.exe','.php5','.php7','.htaccess');
+                               </pre>
+                               Anda bisa mengubah jenis file apa yang boleh diupload dan tidak boleh diupload, masukkan ekstensi filenya.
+                
                                 <hr>
                                 <center>
                                   <h3>We Are Not ARTISAN, but WE ARE PROFESSIONAL :) </h3>
