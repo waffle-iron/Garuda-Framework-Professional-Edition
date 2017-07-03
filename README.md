@@ -120,6 +120,7 @@ Dan apabila ingin menambahkan atau memperbaiki sistem silahkan di fork lalu edit
 * Telah tersedia contoh membuat QR Code, PDF, Zip, dan Mobile Detect
 * Telah tersedia contoh membuat AJAX POST, AJAX GET (Javascript)
 * Telah tersedia contoh membuat Sweet Alert (Javascript)
+* Telah tersedia contoh mendeteksi device mobile phone atau desktop
 * Telah tersedia contoh membuat multi bahasa / language
 * Telah tersedia HTML Template (Meta HTML)
 * Telah tersedia contoh membuat API (Application Programming Interface) 
