@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/lamhotsimamora/Garuda-Framework-Professional-Edition.png?label=ready&title=Ready)](https://waffle.io/lamhotsimamora/Garuda-Framework-Professional-Edition?utm_source=badge)
 # Garuda-Framework-Professional-Edition
 Selamat Datang di Repository Garuda Framework PHP Professional Edition, Framework PHP ini mempermudah anda membuat website dalam hitungan hari baik website standart ataupun professional. Gak percaya ? 
 
